@@ -10,6 +10,7 @@ html {
 
 body {
 	border-top: 3px solid $color__accent;
+	border-bottom: 3px solid $color__accent;
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
