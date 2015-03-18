@@ -21,3 +21,11 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Layout wrapping
+@mixin wrap( $width ){
+	display: block;
+	width: $width;
+	margin-right: auto;
+	margin-left: auto;
+}

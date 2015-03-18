@@ -100,6 +100,8 @@ add_action( 'widgets_init', 'patio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function patio_scripts() {
+
+    wp_enqueue_style( 'patio-google-fonts', '//fonts.googleapis.com/css?family=Chivo:400,400italic,900,900italic' );			
 	wp_enqueue_style( 'patio-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'patio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
