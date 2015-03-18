@@ -354,6 +354,13 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.wrap:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 
 blockquote, q {
   quotes: "" "";
@@ -499,10 +506,10 @@ a:hover, a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
   display: block;
-  float: left;
-  width: 100%;
+  padding: 10px 0 0;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .main-navigation ul {
   list-style: none;
@@ -537,6 +544,7 @@ a:hover, a:active {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: 0 12px;
 }
 
 /* Small menu. */
@@ -679,6 +687,24 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 #masthead {
   background: #FFF;
+}
+#masthead .wrap {
+  padding: 33px 0;
+}
+#masthead .site-branding {
+  float: left;
+}
+#masthead .site-title {
+  font-size: 26px;
+  font-size: 1.625rem;
+  margin: 0;
+}
+#masthead .site-title a {
+  text-decoration: none;
+}
+
+#site-navigation {
+  float: right;
 }
 
 /*--------------------------------------------------------------

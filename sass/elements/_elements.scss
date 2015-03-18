@@ -16,6 +16,14 @@ body {
 
 .wrap{
 	@include wrap( 1180px );
+
+	&:after{
+		content:"";
+		display:block; 
+		height:0; 
+		clear:both; 
+		visibility:hidden;		
+	}
 }
 
 blockquote, q {
