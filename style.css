@@ -710,24 +710,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-.sticky {
-  display: block;
-}
-
-.hentry {
-  margin: 0 0 1.5em;
-}
-
-.byline,
-.updated:not(.published) {
-  display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-  display: inline;
-}
-
 .page-content,
 .entry-content,
 .entry-summary {
@@ -737,6 +719,90 @@ a:hover, a:active {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+/**
+* Hentry style for not-singular page
+*/
+.not-singular #main {
+  padding: 50px 0;
+}
+.not-singular .hentry {
+  width: 580px;
+  height: 435px;
+  display: inline-block;
+  background: #EDEDED;
+  vertical-align: top;
+  margin: 6px 4px;
+  padding: 30px;
+  overflow: hidden;
+}
+.not-singular .hentry .entry-title {
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-weight: 300;
+  margin: 0 0 2px;
+}
+.not-singular .hentry .entry-title a {
+  text-decoration: none;
+}
+.not-singular .hentry .entry-meta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  opacity: .65;
+}
+.not-singular .hentry .entry-meta .updated {
+  display: none;
+}
+.not-singular .hentry .entry-meta .updated.published {
+  display: inline;
+}
+.not-singular .hentry .entry-meta a {
+  text-decoration: none;
+}
+.not-singular .hentry .entry-excerpt {
+  line-height: 1.8;
+}
+.not-singular .hentry .entry-excerpt .more-link {
+  text-decoration: none;
+}
+.not-singular .hentry.has-post-thumbnail {
+  position: relative;
+}
+.not-singular .hentry.has-post-thumbnail .entry-thumbnail {
+  display: block;
+  margin: -30px;
+  width: 580px;
+  height: 435px;
+}
+.not-singular .hentry.has-post-thumbnail .entry-thumbnail img {
+  width: auto;
+  min-height: 100%;
+}
+.not-singular .hentry.has-post-thumbnail .entry-header {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  background: -moz-linear-gradient(top, transparent 0%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, black 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, black 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+.not-singular .hentry.has-post-thumbnail .entry-header a {
+  color: white;
 }
 
 /*--------------------------------------------------------------

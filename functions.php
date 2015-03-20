@@ -46,7 +46,7 @@ function patio_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -113,6 +113,20 @@ function patio_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'patio_scripts' );
+
+/**
+ * Modifying excerpt suffix
+ */
+function patio_excerpt_more(){
+	global $post;
+	
+	$more_url 		= esc_url( get_permalink( $post->ID ) );
+	$more_title 	= sprintf( __( 'Permanent link to %s', 'patio' ), $post->post_title );
+	$more_copy 		= __( 'Continue Reading', 'patio' );
+
+	return "&hellip; </p><p><a href='{$more_url}' title='{$more_title}' class='more-link'>{$more_copy}</a>";
+}	
+add_filter( 'excerpt_more', 'patio_excerpt_more' );
 
 /**
  * Implement the Custom Header feature.
