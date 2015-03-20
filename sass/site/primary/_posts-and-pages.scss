@@ -14,7 +14,7 @@
 */
 .not-singular{
 	#main{
-		padding: 50px 0;
+		padding: 50px 0 10px;
 	}
 
 	.hentry{
@@ -104,8 +104,9 @@
 			height: 325px;
 			margin-left: 4.7px;
 
-			.entry-title{
-				// margin-bottom: 3px;
+			.entry-thumbnail{
+				width: 382px;
+				height: 325px;
 			}
 
 			.entry-excerpt{

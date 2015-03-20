@@ -562,6 +562,27 @@ a:hover, a:active {
     display: none;
   }
 }
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  padding: 50px 4px 30px;
+}
+.comment-navigation a,
+.posts-navigation a,
+.post-navigation a {
+  background: #2E2E2E;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 15px 25px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 1;
+}
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -725,7 +746,7 @@ a:hover, a:active {
 * Hentry style for not-singular page
 */
 .not-singular #main {
-  padding: 50px 0;
+  padding: 50px 0 10px;
 }
 .not-singular .hentry {
   width: 580px;
@@ -809,6 +830,10 @@ a:hover, a:active {
   width: 382px;
   height: 325px;
   margin-left: 4.7px;
+}
+.not-singular .hentry.three-column .entry-thumbnail {
+  width: 382px;
+  height: 325px;
 }
 .not-singular .hentry.three-column .entry-excerpt {
   display: none;

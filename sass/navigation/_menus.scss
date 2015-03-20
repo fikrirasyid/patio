@@ -80,6 +80,18 @@
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
+	padding: 50px 4px 30px;
+
+	a{
+		background: #2E2E2E;
+		color: white;
+		text-decoration: none;
+		@include font-size( 1.125 );
+		padding: 15px 25px;
+		@include border-radius( 5px );
+		display: inline-block;
+		line-height: 1;
+	}
 
 	.site-main & {
 		margin: 0 0 1.5em;
