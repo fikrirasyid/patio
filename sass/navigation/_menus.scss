@@ -101,11 +101,33 @@
 	& .nav-previous {
 		float: left;
 		width: 50%;
+
+		a{
+			&:before{
+				content: '\f430';
+				font-family: 'Genericons';
+				vertical-align: middle;
+				@include font-size( 1.125 );
+				line-height: 1;
+				margin-right: 10px;
+			}
+		}
 	}
 
 	& .nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+
+		a{
+			&:after{
+				content: '\f429';
+				font-family: 'Genericons';
+				vertical-align: middle;
+				@include font-size( 1.125 );
+				line-height: 1;
+				margin-left: 10px;
+			}
+		}
 	}
 }
