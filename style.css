@@ -798,8 +798,12 @@ a:hover, a:active {
   height: 435px;
 }
 .not-singular .hentry.has-post-thumbnail .entry-thumbnail img {
+  width: 100%;
+}
+.not-singular .hentry.has-post-thumbnail .entry-thumbnail.height-adjustment img {
   width: auto;
-  min-height: 100%;
+  max-width: none;
+  height: 100%;
 }
 .not-singular .hentry.has-post-thumbnail .entry-header {
   position: absolute;

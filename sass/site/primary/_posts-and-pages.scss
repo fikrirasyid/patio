@@ -73,8 +73,15 @@
 				height: 435px;
 
 				img{
-					width: auto;
-					min-height: 100%;
+					width: 100%;
+				}
+
+				&.height-adjustment{
+					img{					
+						width: auto;
+						max-width: none;
+						height: 100%;
+					}
 				}
 			}
 
