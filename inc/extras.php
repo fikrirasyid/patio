@@ -23,6 +23,30 @@ function patio_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'patio_body_classes' );
 
+/**
+ * Post class modification
+ */
+function patio_post_classes( $classes ){
+	global $wp_query;
+
+	if( ! isset( $wp_query->count_post ) ){
+		$wp_query->count_post = 1;
+	} else {
+		$wp_query->count_post++;
+	}
+
+	$post_count = $wp_query->count_post % 5;
+
+	if( in_array( $post_count, array( 0, 3, 4 ) ) ){
+		$classes[] = 'three-column';
+	}
+
+	$classes[] = 'lock-' . $post_count;
+
+	return $classes;
+}
+add_filter( 'post_class', 'patio_post_classes' );
+
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
 	 * Filters wp_title to print a neat <title> tag based on what is being viewed.

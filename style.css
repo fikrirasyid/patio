@@ -741,7 +741,8 @@ a:hover, a:active {
   font-size: 26px;
   font-size: 1.625rem;
   font-weight: 300;
-  margin: 0 0 2px;
+  margin: 0 0 5px;
+  line-height: 1.2;
 }
 .not-singular .hentry .entry-title a {
   text-decoration: none;
@@ -803,6 +804,14 @@ a:hover, a:active {
 }
 .not-singular .hentry.has-post-thumbnail .entry-header a {
   color: white;
+}
+.not-singular .hentry.three-column {
+  width: 382px;
+  height: 325px;
+  margin-left: 4.7px;
+}
+.not-singular .hentry.three-column .entry-excerpt {
+  display: none;
 }
 
 /*--------------------------------------------------------------

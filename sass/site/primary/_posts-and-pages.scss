@@ -30,7 +30,8 @@
 		.entry-title{
 			@include font-size( 1.625 );
 			font-weight: 300;
-			margin: 0 0 2px;
+			margin: 0 0 5px;
+			line-height: 1.2;
 
 			a{
 				text-decoration: none;
@@ -95,6 +96,20 @@
 				a{
 					color: white;
 				}
+			}
+		}
+
+		&.three-column{
+			width: 382px;
+			height: 325px;
+			margin-left: 4.7px;
+
+			.entry-title{
+				// margin-bottom: 3px;
+			}
+
+			.entry-excerpt{
+				display: none;
 			}
 		}
 	}
