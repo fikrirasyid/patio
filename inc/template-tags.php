@@ -100,26 +100,34 @@ if ( ! function_exists( 'patio_entry_footer' ) ) :
  * Prints HTML with meta information for the categories, tags and comments.
  */
 function patio_entry_footer() {
+	// Display author link
+	$author = get_the_author();
+	if( $author ){
+		printf( '<div class="author-link item"><a href="%s" title="%s">%s</a></div>', get_author_posts_url( get_the_author_meta( 'ID' ) ), sprintf( __( 'Posts written by %s', 'patio' ), $author ), $author );
+	}
+
+	// Display published date
+	printf( '<div class="date-link item">%s</div>', get_the_date() );
+
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'patio' ) );
 		if ( $categories_list && patio_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'patio' ) . '</span>', $categories_list );
+			printf( '<span class="cat-link item">%s</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'patio' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'patio' ) . '</span>', $tags_list );
+			printf( '<span class="tag-link item">%s</span>', $tags_list );
 		}
 	}
 
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'patio' ), __( '1 Comment', 'patio' ), __( '% Comments', 'patio' ) );
-		echo '</span>';
-	}
+	echo '<span class="comment-link item">';
+	comments_popup_link( __( 'Leave a comment', 'patio' ), __( '1 Comment', 'patio' ), __( '% Comments', 'patio' ) );
+	echo '</span>';
+
 
 	edit_post_link( __( 'Edit', 'patio' ), '<span class="edit-link">', '</span>' );
 }

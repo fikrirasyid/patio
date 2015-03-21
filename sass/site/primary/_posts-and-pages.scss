@@ -4,8 +4,8 @@
 }
 
 /**
-* Hentry style for not-singular page
-*/
+ * Hentry style for not-singular page
+ */
 .not-singular{
 	#main{
 		padding: 50px 0 10px;
@@ -125,13 +125,83 @@
 		padding: 90px 0
 	}
 
+	.hentry-wrap{
+		position: relative;
+	}
+
 	.entry-header,
 	.entry-content,
-	.entry-footer,
 	.navigation,
 	.comments-area{
 		width: 780px;
 		margin-left: 400px;
+	}
+
+	.entry-featured-image{
+		img{
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	.entry-footer{
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 330px;
+		color: #575757;
+
+		.item{
+			display: block;
+			padding: 10px 0;
+			border-bottom: 1px solid #D3D0D0;
+
+			&:before{				
+				font-family: 'Genericons';
+				@include font-size( 1.5 );
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+		}
+
+		.author-link{
+			&:before{
+				content: '\f304';
+			}
+		}
+
+		.date-link{
+			&:before{
+				content: '\f303';
+			}
+		}
+
+		.cat-link{
+			&:before{
+				content: '\f301';
+			}
+		}
+
+		.tag-link{
+			&:before{
+				content: '\f302';				
+			}
+		}
+
+		.comment-link{
+			border-bottom: none;
+
+			&:before{
+				content: '\f300';
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color: #575757;
+			vertical-align: middle;
+		}
 	}
 
 	.entry-title{
@@ -142,7 +212,6 @@
 	}
 
 	.entry-content{
-		@include font-size( 1.125 );
 		color: #000000;
 		padding: 20px 0 0;
 	}
