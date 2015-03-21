@@ -5,12 +5,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php if ( has_post_thumbnail() ): ?>
+	<div class="entry-featured-image">
+		<?php the_post_thumbnail( 'full' ); ?>
+	</div><!-- .entry-featured-image -->
+	<?php endif; ?>
+
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php patio_posted_on(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

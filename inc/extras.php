@@ -15,8 +15,10 @@
  */
 function patio_body_classes( $classes ) {
 	
-	if( ! is_singular() ){
-		$classes[] = 'not-singular';
+	if( is_singular() ){
+		$classes[] = 'singular';
+	} else {
+		$classes[] = 'not-singular';		
 	}
 
 	return $classes;

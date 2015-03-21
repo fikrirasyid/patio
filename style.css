@@ -922,6 +922,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 1.5em;
 }
 
@@ -1395,12 +1396,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
-}
-
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -1505,6 +1500,34 @@ a:hover, a:active {
 }
 .not-singular .hentry.three-column .entry-excerpt {
   display: none;
+}
+
+/**
+ * Singular template
+ */
+.singular #main {
+  padding: 90px 0;
+}
+.singular .entry-header,
+.singular .entry-content,
+.singular .entry-footer,
+.singular .navigation,
+.singular .comments-area {
+  width: 780px;
+  margin-left: 400px;
+}
+.singular .entry-title {
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: 300;
+  color: #000;
+  margin: 40px 0 0;
+}
+.singular .entry-content {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #000000;
+  padding: 20px 0 0;
 }
 
 /*--------------------------------------------------------------
