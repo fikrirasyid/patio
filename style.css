@@ -1380,13 +1380,11 @@ a:hover, a:active {
   }
 }
 .comment-navigation,
-.posts-navigation,
-.post-navigation {
+.posts-navigation {
   padding: 50px 4px 30px;
 }
 .comment-navigation a,
-.posts-navigation a,
-.post-navigation a {
+.posts-navigation a {
   background: #2E2E2E;
   color: white;
   text-decoration: none;
@@ -1401,20 +1399,17 @@ a:hover, a:active {
   line-height: 1;
 }
 .site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.posts-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.posts-navigation .nav-previous {
   float: left;
   width: 50%;
 }
 .comment-navigation .nav-previous a:before,
-.posts-navigation .nav-previous a:before,
-.post-navigation .nav-previous a:before {
+.posts-navigation .nav-previous a:before {
   content: '\f430';
   font-family: 'Genericons';
   vertical-align: middle;
@@ -1424,15 +1419,13 @@ a:hover, a:active {
   margin-right: 10px;
 }
 .comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.posts-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
 .comment-navigation .nav-next a:after,
-.posts-navigation .nav-next a:after,
-.post-navigation .nav-next a:after {
+.posts-navigation .nav-next a:after {
   content: '\f429';
   font-family: 'Genericons';
   vertical-align: middle;
@@ -1440,6 +1433,49 @@ a:hover, a:active {
   font-size: 1.125rem;
   line-height: 1;
   margin-left: 10px;
+}
+
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
+  background: #1B1B1B;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 30px 25px 25px;
+  margin-bottom: 10px;
+  position: relative;
+  background-size: cover;
+}
+.post-navigation .nav-previous a:after,
+.post-navigation .nav-next a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: #000;
+  opacity: .25;
+}
+.post-navigation .nav-previous a .meta-nav,
+.post-navigation .nav-next a .meta-nav {
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: .75;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.post-navigation .nav-previous a .post-title,
+.post-navigation .nav-next a .post-title {
+  font-size: 26px;
+  font-size: 1.625rem;
+  text-shadow: 0 1px 2px #000;
+  display: block;
+  position: relative;
+  z-index: 10;
+  line-height: 1.2;
 }
 
 /*--------------------------------------------------------------

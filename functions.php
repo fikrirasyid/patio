@@ -129,6 +129,48 @@ function patio_excerpt_more(){
 add_filter( 'excerpt_more', 'patio_excerpt_more' );
 
 /**
+ * Add featured image as background image to post navigation elements.
+ *
+ * @since Twenty Fifteen 1.0
+ *
+ * @see wp_add_inline_style()
+ */
+function patio_post_nav_background() {
+	if ( ! is_single() ) {
+		return;
+	}
+
+	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
+	$next     = get_adjacent_post( false, '', false );
+	$css      = '';
+
+	if ( is_attachment() && 'attachment' == $previous->post_type ) {
+		return;
+	}
+
+	if ( $previous &&  has_post_thumbnail( $previous->ID ) ) {
+		$prevthumb = wp_get_attachment_image_src( get_post_thumbnail_id( $previous->ID ), 'post-thumbnail' );
+		$css .= '
+			.post-navigation .nav-previous a{ background-image: url(' . esc_url( $prevthumb[0] ) . '); }
+			.post-navigation .nav-previous .post-title, .post-navigation .nav-previous a:hover .post-title, .post-navigation .nav-previous .meta-nav { color: #fff; }
+			.post-navigation .nav-previous a:before { background-color: rgba(0, 0, 0, 0.4); }
+		';
+	}
+
+	if ( $next && has_post_thumbnail( $next->ID ) ) {
+		$nextthumb = wp_get_attachment_image_src( get_post_thumbnail_id( $next->ID ), 'post-thumbnail' );
+		$css .= '
+			.post-navigation .nav-next a{ background-image: url(' . esc_url( $nextthumb[0] ) . '); }
+			.post-navigation .nav-next .post-title, .post-navigation .nav-next a:hover .post-title, .post-navigation .nav-next .meta-nav { color: #fff; }
+			.post-navigation .nav-next a:before { background-color: rgba(0, 0, 0, 0.4); }
+		';
+	}
+
+	wp_add_inline_style( 'patio-style', $css );
+}
+add_action( 'wp_enqueue_scripts', 'patio_post_nav_background' );
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
