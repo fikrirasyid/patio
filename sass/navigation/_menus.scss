@@ -132,6 +132,8 @@
 }
 
 .post-navigation{
+	padding: 30px 0;
+
 	.nav-previous,
 	.nav-next{
 		a{
@@ -139,7 +141,7 @@
 			color: white;
 			display: block;
 			text-decoration: none;
-			padding: 30px 25px 25px;
+			padding: 30px 25px 28px;
 			margin-bottom: 10px;
 			position: relative;
 			background-size: cover;

@@ -148,7 +148,8 @@
 
 		.item{
 			display: block;
-			padding: 10px 0;
+			padding: 10px 10px 10px 35px;
+			position: relative;
 			border-bottom: 1px solid #D3D0D0;
 
 			&:before{				
@@ -156,6 +157,9 @@
 				@include font-size( 1.5 );
 				vertical-align: middle;
 				margin-right: 10px;
+				position: absolute;
+				top: 4px;
+				left: 0;
 			}
 		}
 

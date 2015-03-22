@@ -1435,13 +1435,16 @@ a:hover, a:active {
   margin-left: 10px;
 }
 
+.post-navigation {
+  padding: 30px 0;
+}
 .post-navigation .nav-previous a,
 .post-navigation .nav-next a {
   background: #1B1B1B;
   color: white;
   display: block;
   text-decoration: none;
-  padding: 30px 25px 25px;
+  padding: 30px 25px 28px;
   margin-bottom: 10px;
   position: relative;
   background-size: cover;
@@ -1742,7 +1745,8 @@ a:hover, a:active {
 }
 .singular .entry-footer .item {
   display: block;
-  padding: 10px 0;
+  padding: 10px 10px 10px 35px;
+  position: relative;
   border-bottom: 1px solid #D3D0D0;
 }
 .singular .entry-footer .item:before {
@@ -1751,6 +1755,9 @@ a:hover, a:active {
   font-size: 1.5rem;
   vertical-align: middle;
   margin-right: 10px;
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
 .singular .entry-footer .author-link:before {
   content: '\f304';
