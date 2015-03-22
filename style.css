@@ -1727,7 +1727,7 @@ a:hover, a:active {
 .singular .entry-header,
 .singular .entry-content,
 .singular .navigation,
-.singular .comments-area {
+.singular .comments-wrap {
   width: 780px;
   margin-left: 400px;
 }
@@ -1805,12 +1805,80 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
+#comments {
+  background: #1B1B1B;
+  color: white;
+}
+
 .comment-content a {
   word-wrap: break-word;
 }
 
 .bypostauthor {
   display: block;
+}
+
+.comments-wrap {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.comments-title {
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.comment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.comment-list .children {
+  padding-left: 0;
+  margin-left: 80px;
+}
+
+.comment-body {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+.comment-body a {
+  text-decoration: none;
+  color: white;
+}
+.comment-body .fn {
+  font-weight: 300;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+.comment-body .says {
+  font-style: italic;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.comment-body .comment-metadata {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #575757;
+  line-height: 1.2;
+}
+.comment-body .comment-metadata a {
+  color: #575757;
+}
+.comment-body .avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.comment-body .comment-content {
+  margin-top: 15px;
 }
 
 /*--------------------------------------------------------------

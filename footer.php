@@ -7,7 +7,10 @@
  * @package Patio
  */
 ?>
+		<?php if( ! is_singular() ) : ?>
 		</div><!-- .wrap -->
+		<?php endif; ?>
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

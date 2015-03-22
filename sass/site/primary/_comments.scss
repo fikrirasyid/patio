@@ -1,6 +1,81 @@
+#comments{
+	background: #1B1B1B;
+	color: white;
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 .bypostauthor {
 	display: block;
+}
+
+.comments-wrap{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.comments-title{
+	font-weight: 300;
+	margin-bottom: 40px;
+	@include font-size( 1.875 );
+}
+
+.comment-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	.children{
+		padding-left: 0;
+		margin-left: 80px;
+	}
+}
+
+.comment-body{
+	position: relative;
+	padding-left: 80px;
+	margin-bottom: 40px;
+
+	a{
+		text-decoration: none;
+		color: white;
+	}
+
+	.fn{
+		font-weight: 300;
+		@include font-size( 1.375 );
+	}
+
+	.says{
+		font-style: italic;
+		@include font-size( 1.125 );
+	}
+
+	.comment-metadata{
+		@include font-size( .875 );
+		color: #575757;
+		line-height: 1.2;
+
+		a{	
+			color: #575757;
+		}
+	}
+
+	.avatar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include border-radius( 50% );
+	}
+
+	.comment-content{
+		margin-top: 15px;
+	}
+}
+
+#respond{
+	p{
+		// margin: 0;
+	}
 }

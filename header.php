@@ -35,4 +35,7 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+		<?php if( ! is_singular() ) : ?>
 		<div class="wrap">
+		<?php endif; ?>
