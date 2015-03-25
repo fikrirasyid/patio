@@ -2077,3 +2077,41 @@ object {
   padding: 13px 20px 18px;
   opacity: .7;
 }
+
+/*--------------------------------------------------------------
+13.0 Plugins
+--------------------------------------------------------------*/
+.entry-content hr.footnotes {
+  display: none;
+}
+.entry-content ol.footnotes {
+  font-size: 16px;
+  font-size: 1rem;
+  opacity: .7;
+  position: relative;
+  margin-top: 3em;
+  padding-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 0;
+}
+.entry-content ol.footnotes:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 65%;
+  height: 2px;
+  background: #e1e1e1;
+}
+.entry-content ol.footnotes li {
+  margin-bottom: .3em;
+}
+.entry-content ol.footnotes li p {
+  margin: 0 0 1em;
+}
+.entry-content ol.footnotes li p:last-child {
+  margin-bottom: 0;
+}
+.entry-content ol.footnotes a.backlink {
+  text-decoration: none;
+}
