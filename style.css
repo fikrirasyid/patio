@@ -1791,6 +1791,9 @@ a:hover, a:active {
   margin: 0 auto;
   display: block;
 }
+.singular .entry-title {
+  line-height: 1.2;
+}
 .singular .entry-footer {
   position: absolute;
   top: 0;
