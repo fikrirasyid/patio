@@ -1741,6 +1741,7 @@ a:hover, a:active {
 .singular .entry-header,
 .singular .entry-content,
 .singular .posts-navigation,
+.singular .post-navigation,
 .singular .comments-wrap {
   width: 780px;
   margin-left: 400px;
