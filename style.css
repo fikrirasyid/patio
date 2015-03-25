@@ -1655,6 +1655,15 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+.page-header .page-title {
+  font-weight: 300;
+}
+.page-header p {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  color: #666666;
+}
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
