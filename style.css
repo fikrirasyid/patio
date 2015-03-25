@@ -1487,6 +1487,14 @@ a:hover, a:active {
   line-height: 1.2;
 }
 
+.comment-navigation {
+  overflow: hidden;
+  padding: 30px 0 30px;
+}
+.comment-navigation#comment-nav-above {
+  padding: 0 0 45px;
+}
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -1732,7 +1740,7 @@ a:hover, a:active {
 }
 .singular .entry-header,
 .singular .entry-content,
-.singular .navigation,
+.singular .posts-navigation,
 .singular .comments-wrap {
   width: 780px;
   margin-left: 400px;
@@ -1845,6 +1853,9 @@ a:hover, a:active {
   padding-left: 0;
   margin-left: 80px;
 }
+.comment-list .children li {
+  list-style: none;
+}
 
 .comment-body {
   position: relative;
@@ -1943,6 +1954,12 @@ a:hover, a:active {
 
 .comment-list #respond {
   padding-bottom: 30px;
+}
+.comment-list .depth-2 #respond .comment-form-author,
+.comment-list .depth-2 #respond .comment-form-email,
+.comment-list .depth-2 #respond .comment-form-url {
+  width: 100%;
+  margin-right: 0;
 }
 
 #cancel-comment-reply-link {
