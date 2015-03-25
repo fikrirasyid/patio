@@ -1330,7 +1330,6 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .main-navigation {
   display: block;
-  padding: 10px 0 0;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -1340,10 +1339,9 @@ a:hover, a:active {
   padding-left: 0;
 }
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
-  top: 1.5em;
+  top: 2.4em;
   left: -999em;
   z-index: 99999;
 }
@@ -1364,10 +1362,44 @@ a:hover, a:active {
   float: left;
   position: relative;
 }
+.main-navigation li.current-menu-item > a, .main-navigation li:hover > a {
+  color: #FF8F00;
+}
+.main-navigation .menu-item-has-children > a:after {
+  content: '\f431';
+  font-family: 'Genericons';
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.main-navigation .menu-item-has-children .menu-item-has-children > a:after {
+  content: '\f429';
+}
+.main-navigation .menu-item-has-children:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+.main-navigation .menu-item-has-children:hover > a {
+  background: #FF8F00;
+  color: #000;
+}
+.main-navigation .menu-item-has-children:hover .sub-menu {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+.main-navigation .menu-item-has-children:hover .sub-menu li.current-menu-item, .main-navigation .menu-item-has-children:hover .sub-menu li:hover {
+  box-shadow: none;
+}
+.main-navigation .menu-item-has-children:hover .sub-menu li.current-menu-item a, .main-navigation .menu-item-has-children:hover .sub-menu li:hover a {
+  color: #000;
+}
+.main-navigation .menu-item-has-children:hover .sub-menu li .sub-menu {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.main-navigation .sub-menu {
+  background: #FF8F00;
+}
 .main-navigation a {
   display: block;
   text-decoration: none;
-  padding: 0 12px;
+  padding: 8px 15px;
 }
 
 /* Small menu. */
