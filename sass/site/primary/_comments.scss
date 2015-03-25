@@ -29,6 +29,10 @@
 	.children{
 		padding-left: 0;
 		margin-left: 80px;
+
+		li{
+			list-style: none;
+		}
 	}
 }
 
@@ -132,6 +136,17 @@
 .comment-list{
 	#respond{
 		padding-bottom: 30px;
+	}
+
+	.depth-2{
+		#respond{
+			.comment-form-author,
+			.comment-form-email,
+			.comment-form-url{
+				width: 100%;
+				margin-right: 0;
+			}					
+		}
 	}
 }
 

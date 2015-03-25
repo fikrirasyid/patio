@@ -177,3 +177,12 @@
 		}
 	}
 }
+
+.comment-navigation{
+	overflow: hidden;
+	padding: 30px 0 30px;
+
+	&#comment-nav-above{
+		padding: 0 0 45px;
+	}
+}
