@@ -35,7 +35,7 @@
 .comment-body{
 	position: relative;
 	padding-left: 80px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 
 	a{
 		text-decoration: none;
@@ -74,8 +74,75 @@
 	}
 }
 
-#respond{
-	p{
-		// margin: 0;
+.comment-reply-link{
+	background: #000000;
+	padding: 12px 20px;
+	@include font-size( 1 );
+	@include border-radius( 3px );
+	box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.5 );
+
+	&:hover{
+		background: $color__accent;
 	}
+
+	&:active{
+		background: darken( $color__accent, 10% );
+	}
+}
+
+#reply-title{
+	@include font-size( 1.875 );
+	font-weight: 300;
+	position: relative;
+}
+
+#respond{
+	padding-top: 30px;
+
+	.comment-notes,
+	.required,
+	.form-allowed-tags{
+		display: none;
+	}
+
+	label{
+		display: block;
+		@include font-size( 1.125 );
+		padding-bottom: 10px;
+	}
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url{
+		display: inline-block;
+		width: 31.6%;
+	}
+
+	.comment-form-author,
+	.comment-form-email{
+		margin-right: 2%;
+	}
+
+	.comment-form-comment{
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+}
+
+.comment-list{
+	#respond{
+		padding-bottom: 30px;
+	}
+}
+
+#cancel-comment-reply-link{
+	@include font-size( 1 );
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	top: 6px;
+	right: 0;
+	border: 2px solid white;
+	@include border-radius( 3px );
+	padding: 5px 20px;
 }

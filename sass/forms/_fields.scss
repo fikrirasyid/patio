@@ -6,10 +6,14 @@ input[type="search"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
-	border-radius: 3px;
+	border-radius: 0;
+	@include font-size( 1 );
+	border-bottom: 3px solid #979797;
+	outline: none;
 
 	&:focus {
 		color: $color__text-input-focus;
+		border-bottom: 3px solid $color__accent;
 	}
 }
 
@@ -18,10 +22,11 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 10px;
+	width: 100%;
 }
 
 textarea {
-	padding-left: 3px;
+	padding: 10px;
 	width: 100%;
 }
