@@ -246,6 +246,10 @@
 			text-decoration: none;
 			color: #575757;
 			vertical-align: middle;
+
+			&:hover{
+				color: $color__accent;
+			}
 		}
 	}
 

@@ -1239,6 +1239,7 @@ table {
 .entry-title a,
 .entry-meta a,
 .entry-content a,
+.entry-footer a,
 .more-link,
 .navigation a,
 #colophon a,
@@ -1900,6 +1901,9 @@ a:hover, a:active {
   text-decoration: none;
   color: #575757;
   vertical-align: middle;
+}
+.singular .entry-footer a:hover {
+  color: #FF8F00;
 }
 .singular .entry-title {
   font-size: 50px;
