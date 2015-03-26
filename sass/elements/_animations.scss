@@ -1,0 +1,38 @@
+// Transition
+@mixin smooth_transition(){
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out ;
+	-ms-transition: all .2s ease-out ;
+	-o-transition: all .2s ease-out ;
+	transition: all .2s ease-out ;	
+}
+
+@mixin animate( $time ){
+  -webkit-animation-duration: $time;
+          animation-duration: $time;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+// Animated selectors
+.site-title a,
+.entry-title a,
+.entry-meta a,
+.entry-content a,
+.more-link,
+.navigation a,
+#colophon a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	@include smooth_transition;
+}
+
+.not-singular{
+	.hentry.has-post-thumbnail{
+		.entry-header{
+			@include smooth_transition;	
+		}
+	}
+}

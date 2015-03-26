@@ -1235,6 +1235,32 @@ table {
   width: 100%;
 }
 
+.site-title a,
+.entry-title a,
+.entry-meta a,
+.entry-content a,
+.more-link,
+.navigation a,
+#colophon a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.not-singular .hentry.has-post-thumbnail .entry-header {
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
@@ -1784,6 +1810,9 @@ a:hover, a:active {
 .not-singular .hentry.has-post-thumbnail .entry-header a:hover {
   opacity: .65;
 }
+.not-singular .hentry.has-post-thumbnail:hover .entry-header {
+  padding-top: 40px;
+}
 .not-singular .hentry.three-column {
   width: 382px;
   height: 325px;
@@ -2072,6 +2101,9 @@ a:hover, a:active {
 #colophon .site-info {
   text-align: center;
   padding: 50px 0;
+}
+#colophon .site-info a:hover {
+  color: #FF8F00;
 }
 
 /*--------------------------------------------------------------
