@@ -1972,6 +1972,9 @@ a:hover, a:active {
 #respond {
   padding-top: 30px;
 }
+#respond a {
+  color: white;
+}
 #respond .comment-notes,
 #respond .required,
 #respond .form-allowed-tags {
