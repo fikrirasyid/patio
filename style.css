@@ -1657,6 +1657,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .page-header .page-title {
   font-weight: 300;
+  color: #000;
 }
 .page-header p {
   margin-top: -20px;
