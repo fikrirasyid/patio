@@ -83,10 +83,10 @@ function patio_posted_on() {
 	);
 
 	$time = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
-	printf( '%s &bull; ', $time );
+	printf( '%s <span class="separator">&bull;</span> ', $time );
 
 	$author = '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
-	printf( '%s &bull; ', $author );
+	printf( '%s <span class="separator">&bull;</span> ', $author );
 
 	echo '<span class="comments-link">';
 	comments_popup_link( __( 'Add your comment', 'patio' ), __( '1 Comment', 'patio' ), __( '% Comments', 'patio' ) );

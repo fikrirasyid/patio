@@ -145,6 +145,10 @@
 		@include border-radius( 5px );
 		display: inline-block;
 		line-height: 1;
+
+		&:hover{
+			background: $color__accent;
+		}
 	}
 
 	.site-main & {

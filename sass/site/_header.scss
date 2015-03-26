@@ -15,6 +15,10 @@
 
 		a{
 			text-decoration: none;
+
+			&:hover{
+				color: $color__accent;
+			}
 		}
 	}
 }

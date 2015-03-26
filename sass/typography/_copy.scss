@@ -6,6 +6,12 @@
 	// 	@include font-size( 1 );
 	// }
 
+	a{
+		&:hover{
+			color: $color__accent;
+		}
+	}
+
 	h1{
 		line-height: 1.2;
 		margin-top: 1.5em;
