@@ -147,6 +147,22 @@
 				display: none;
 			}
 		}
+
+		&.sticky{
+			&:before{
+				content: '\f408';
+				font-family: 'Genericons';
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				color: rgba(255,255,255,.8);
+				@include font-size( 2 );
+				line-height: 1;
+				background: rgba( 0, 0, 0, .2 );
+				padding: 7px;
+				@include border-radius( 5px );
+			}
+		}		
 	}
 }
 
