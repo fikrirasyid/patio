@@ -14,6 +14,7 @@ function patio_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'footer'    => 'page',
+		'posts_per_page' => 10
 	) );
 }
 add_action( 'after_setup_theme', 'patio_jetpack_setup' );

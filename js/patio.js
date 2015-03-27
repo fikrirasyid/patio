@@ -2,19 +2,31 @@ jQuery(document).ready(function($){
 	/**
 	* Auto adjust post thumbnail
 	*/
+	function auto_adjust_thumbnail( thumb ){
+		var thumb_height 	= thumb.outerHeight();
+		var img 			= thumb.find( 'img' );
+		var img_width 		= img.outerWidth();
+		var img_height 		= img.outerHeight();
+
+		if( thumb_height > img_height ){
+			thumb.addClass( 'height-adjustment' );
+		}
+	}
+
 	$(window).load(function(){
 		$('.entry-thumbnail').each(function(){
-			var thumb 			= $(this);
-			var thumb_height 	= thumb.outerHeight();
-			var img 			= thumb.find( 'img' );
-			var img_width 		= img.outerWidth();
-			var img_height 		= img.outerHeight();
-
-			if( thumb_height > img_height ){
-				thumb.addClass( 'height-adjustment' );
-			}
+			auto_adjust_thumbnail( $(this) );
 		});
 	});
+
+	// Auto adjust post thumbnail in infinite scroll
+    $( document.body ).on( 'post-load', function () {
+    	setTimeout(function(){
+			$('.infinite-wrap:last .entry-thumbnail').each(function(){
+				auto_adjust_thumbnail( $(this) );
+			});
+    	}, 300 );
+    } );
 
 	/**
 	* Civil Footnotes Support

@@ -2155,6 +2155,19 @@ a:hover, a:active {
   display: block;
 }
 
+.infinite-loader {
+  text-align: center;
+  display: block;
+  height: 30px;
+}
+.infinite-loader .spinner {
+  display: block;
+  margin: 35px auto 10px;
+  left: 0 !important;
+  top: auto !important;
+  height: 30px;
+}
+
 /*--------------------------------------------------------------
 12.0 Media
 --------------------------------------------------------------*/
