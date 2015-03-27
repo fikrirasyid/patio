@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+1.0 Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+body#tinymce{
+	padding: 30px 30px 0 !important;
+	max-width: 660px;
+	@include copy;
+	font-size: 18px;
+	color: $color__text-main;
+	background: white;
+
+	blockquote{
+		p{		
+			@include font-size( 2.1 );
+		}
+	}
+
+	a{
+		color: #000;
+	}
+
+	.alignleft {
+		margin-right: 1.5em;
+	}
+
+	.alignright {
+		margin-left: 1.5em;
+	}	
+}

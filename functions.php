@@ -74,6 +74,12 @@ function patio_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Adding editor style
+	add_editor_style( array(
+		'//fonts.googleapis.com/css?family=Chivo:400,400italic,900,900italic',
+		"editor.css"
+	) );
 }
 endif; // patio_setup
 add_action( 'after_setup_theme', 'patio_setup' );
