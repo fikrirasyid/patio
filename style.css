@@ -1826,6 +1826,16 @@ a:hover, a:active {
 .not-singular .hentry.three-column .entry-excerpt {
   display: none;
 }
+.not-singular .hentry.sticky {
+  width: auto;
+  display: block;
+}
+.not-singular .hentry.sticky .entry-thumbnail {
+  width: 106%;
+}
+.not-singular .hentry.sticky .entry-thumbnail img {
+  width: 100%;
+}
 .not-singular .hentry.sticky:before {
   content: '\f408';
   font-family: 'Genericons';

@@ -149,6 +149,17 @@
 		}
 
 		&.sticky{
+			width: auto;
+			display: block;
+			
+			.entry-thumbnail{
+				width: 106%;
+
+				img{
+					width: 100%;
+				}
+			}
+
 			&:before{
 				content: '\f408';
 				font-family: 'Genericons';

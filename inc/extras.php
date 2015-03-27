@@ -29,7 +29,12 @@ add_filter( 'body_class', 'patio_body_classes' );
  * Post class modification
  */
 function patio_post_classes( $classes ){
-	global $wp_query;
+	global $wp_query, $post;
+
+	// Skip sticky post
+	if( is_sticky( $post->ID ) ){
+		return $classes;
+	}
 
 	if( ! isset( $wp_query->count_post ) ){
 		$wp_query->count_post = 1;
