@@ -12,13 +12,44 @@
 .infinite-loader{
 	text-align: center;
 	display: block;
-	height: 30px;
+	height: 73px;
 
 	.spinner{
 		display: block;
-		margin: 35px auto 10px;
+		margin: 55px auto 30px;
 		left: 0 !important;
 		top: auto !important;
-		height: 30px;
+		height: 73px;
+	}
+}
+
+#infinite-handle{
+	padding: 40px 0;
+
+	span{
+		background: none;
+		display: block;
+		padding: 0;
+
+		button{
+			background: #2E2E2E;
+			color: white;
+			text-decoration: none;
+			@include font-size( 1.125 );
+			padding: 15px 25px;
+			@include border-radius( 5px );
+			display: block;
+			line-height: 1;
+			margin: 0 auto;
+
+			&:hover{
+				padding: 15px 25px;
+				background: $color__accent;
+				@include font-size( 1.125 );
+				margin: 0 auto;
+				display: block;
+				line-height: 1;
+			}		
+		}
 	}
 }
