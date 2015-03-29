@@ -12,9 +12,11 @@
 	<?php endif; ?>
 	
 	<div class="hentry-wrap">
+		<?php if( ! patio_is_auto_hide_title() ): ?>
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
+		<?php endif; ?>
 
 		<div class="entry-content">
 			<?php the_content(); ?>

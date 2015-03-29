@@ -133,3 +133,23 @@ function patio_footer_widget_class(){
 	// Print the classes
 	echo implode( ' ', apply_filters( 'patio_footer_widget_class', $classes ) );
 }
+
+/**
+ * If the first 20 characters of title is equal to the first 20 characters of content, 
+ * there is a chance that the title is generated from content. Auto hide this redundancy
+ * 
+ * @return bool
+ */
+if( ! function_exists( 'patio_is_auto_hide_title' ) ) :
+function patio_is_auto_hide_title(){
+	global $post;
+
+	if( substr( $post->post_title, 0, 20 ) == substr( strip_tags( $post->post_content ), 0, 20 ) ){
+		$do = true;
+	} else {
+		$do = false;
+	}
+
+	return apply_filters( 'patio_is_auto_hide_title', $do, $post );
+}
+endif;
