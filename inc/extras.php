@@ -115,10 +115,10 @@ function patio_footer_widget_class(){
 	foreach ( $widgets as $widget ) {		
 
 		// Determine widget id
-		if( $widget == 1 ){
-			$widget_id = 'footer';
-		} else {
-			$widget_id = 'footer-' . $widget;
+		$widget_id = 'footer';
+
+		if( $widget > 1 ){
+			$widget_id .= '-' . $widget;
 		}
 
 		// If the widget is active, adds widget count
