@@ -2132,6 +2132,151 @@ a:hover, a:active {
   background: white;
   border-top: 1px solid #CFCFCF;
 }
+#colophon .footer-widgets-wrap {
+  padding: 50px 0 10px;
+  /**
+  * Default WordPress Widgets
+  */
+  /**
+  * Jetpack widgets
+  */
+}
+#colophon .footer-widgets-wrap:after {
+  content: '';
+  width: 250px;
+  height: 2px;
+  display: block;
+  background: #DFDFDF;
+  margin: 80px auto 0;
+}
+#colophon .footer-widgets-wrap.column-0 {
+  display: none;
+}
+#colophon .footer-widgets-wrap.column-1 .footer-widgets {
+  width: 100%;
+}
+#colophon .footer-widgets-wrap.column-2 .footer-widgets {
+  width: 50%;
+}
+#colophon .footer-widgets-wrap.column-3 .footer-widgets {
+  width: 33%;
+}
+#colophon .footer-widgets-wrap.column-4 .footer-widgets {
+  width: 25%;
+}
+#colophon .footer-widgets-wrap .footer-widgets {
+  display: inline-block;
+  vertical-align: top;
+  color: #6E6E6E;
+}
+#colophon .footer-widgets-wrap .footer-widgets .widget {
+  padding-right: 40px;
+}
+#colophon .footer-widgets-wrap .footer-widgets .widget-title {
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #000;
+  line-height: 1.2;
+}
+#colophon .footer-widgets-wrap .footer-widgets ul {
+  margin-left: 1.25em;
+  padding-left: 0;
+}
+#colophon .footer-widgets-wrap .footer-widgets ul li, #colophon .footer-widgets-wrap .footer-widgets ol li {
+  margin-bottom: 5px;
+}
+#colophon .footer-widgets-wrap .footer-widgets p {
+  margin-top: 0;
+}
+#colophon .footer-widgets-wrap .footer-widgets a {
+  text-decoration: none;
+  color: #6E6E6E;
+}
+#colophon .footer-widgets-wrap .footer-widgets a:hover {
+  color: #FF8F00;
+}
+#colophon .footer-widgets-wrap .footer-widgets input[type="text"],
+#colophon .footer-widgets-wrap .footer-widgets input[type="email"],
+#colophon .footer-widgets-wrap .footer-widgets input[type="url"],
+#colophon .footer-widgets-wrap .footer-widgets input[type="password"],
+#colophon .footer-widgets-wrap .footer-widgets input[type="search"],
+#colophon .footer-widgets-wrap .footer-widgets textarea {
+  box-sizing: border-box;
+}
+#colophon .footer-widgets-wrap .widget_rss .widget-title a {
+  color: #000;
+}
+#colophon .footer-widgets-wrap .widget_rss .widget-title a:hover {
+  color: #FF8F00;
+}
+#colophon .footer-widgets-wrap .widget_rss ul {
+  margin-left: 0;
+}
+#colophon .footer-widgets-wrap .widget_rss ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#colophon .footer-widgets-wrap .widget_rss .rsswidget {
+  color: #FF8F00;
+}
+#colophon .footer-widgets-wrap .widget_rss .rsswidget:hover {
+  text-decoration: underline;
+  color: #000;
+}
+#colophon .footer-widgets-wrap .widget_rss .rss-date {
+  display: block;
+  font-size: .85em;
+  color: #bfbfbf;
+}
+#colophon .footer-widgets-wrap .widget_rss cite {
+  font-size: .85em;
+}
+#colophon .footer-widgets-wrap .widget_recent_comments li {
+  font-style: italic;
+  color: #000;
+}
+#colophon .footer-widgets-wrap .widget_recent_comments li .comment-author-link,
+#colophon .footer-widgets-wrap .widget_recent_comments li a {
+  font-style: normal;
+  color: #6E6E6E;
+}
+#colophon .footer-widgets-wrap .widget_contact_info .contact-map {
+  margin-bottom: 15px;
+}
+#colophon .footer-widgets-wrap .widget_contact_info .confit-address,
+#colophon .footer-widgets-wrap .widget_contact_info .confit-phone,
+#colophon .footer-widgets-wrap .widget_contact_info .confit-hours {
+  font-size: .9em;
+}
+#colophon .footer-widgets-wrap .widget_jetpack_display_posts_widget h4 {
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1rem;
+}
+#colophon .footer-widgets-wrap .widget_facebook_likebox .widget-title a {
+  color: #000;
+}
+#colophon .footer-widgets-wrap .widget_facebook_likebox .widget-title a:hover {
+  color: #FF8F00;
+}
+#colophon .footer-widgets-wrap .widget-grofile .grofile-thumbnail {
+  border: 3px solid #000;
+}
+#colophon .footer-widgets-wrap .widget-grofile h4 a {
+  color: #000;
+}
+#colophon .footer-widgets-wrap .widget_image figure {
+  margin: 0;
+}
+#colophon .footer-widgets-wrap .widget_image .wp-caption-text {
+  margin-top: .5em;
+}
+#colophon .footer-widgets-wrap .widget_rss_links a {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+}
 #colophon .site-info {
   text-align: center;
   padding: 50px 0;

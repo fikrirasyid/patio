@@ -90,14 +90,13 @@ add_action( 'after_setup_theme', 'patio_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function patio_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'patio' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
+	register_sidebars( 4, array(
+		'name'          => __( 'Footer %d', 'patio' ),
+		'id'            => 'footer',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
 	) );
 }
 add_action( 'widgets_init', 'patio_widgets_init' );

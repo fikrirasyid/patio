@@ -15,6 +15,32 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrap">
+			<div class="<?php patio_footer_widget_class(); ?>">
+
+				<?php
+					// Determine how many widgets are being registered
+					$columns = range( 1, 4 );
+
+					// Loop and print active widget
+					foreach ( $columns as $column ) {		
+						
+						// Determine widget id
+						if( $column == 1 ){
+							$widget_id = 'footer';
+						} else {
+							$widget_id = 'footer-' . $column;
+						}
+
+						if( is_active_sidebar( $widget_id ) ){
+							printf( '<div class="footer-widgets footer-%d">', $column );
+							dynamic_sidebar( $widget_id );
+							printf( '</div>' );							
+						}
+					}
+				?>
+
+			</div><!-- .widgets -->
+
 			<div class="site-info">
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'patio' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'patio' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>

@@ -2,6 +2,218 @@
 	background: white;
 	border-top: 1px solid $color__border;
 
+	.footer-widgets-wrap{
+		padding: 50px 0 10px;
+
+		&:after{
+			content: '';
+			width: 250px;
+			height: 2px;
+			display: block;
+			background: #DFDFDF;
+			margin: 80px auto 0;
+		}
+
+		&.column-0{
+			display: none;
+		}
+
+		&.column-1{
+			.footer-widgets{				
+				width: 100%;
+			}			
+		}
+
+		&.column-2{
+			.footer-widgets{				
+				width: 50%;
+			}
+		}
+
+		&.column-3{
+			.footer-widgets{				
+				width: 33%;
+			}			
+		}
+
+		&.column-4{
+			.footer-widgets{				
+				width: 25%;
+			}			
+		}
+
+		.footer-widgets{
+			display: inline-block;
+			vertical-align: top;
+			color: #6E6E6E;
+
+			.widget{
+				padding-right: 40px;
+			}
+
+			.widget-title{
+				font-weight: 300;
+				margin-top: 30px;
+				margin-bottom: 15px;
+				color: #000;
+				line-height: 1.2;
+			}
+
+			ul{
+				margin-left: 1.25em;
+				padding-left: 0;
+			}
+
+			ul,ol{
+				li{
+					margin-bottom: 5px;
+				}
+			}
+
+			p{
+				margin-top: 0;
+			}
+
+			a{
+				text-decoration: none;
+				color: #6E6E6E;
+
+				&:hover{
+					color: $color__accent;
+				}
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="url"],
+			input[type="password"],
+			input[type="search"],
+			textarea{
+				box-sizing: border-box;
+			}
+		}
+	
+		/**
+		* Default WordPress Widgets
+		*/
+		.widget_rss{
+			.widget-title{
+				a{
+					color: #000;
+
+					&:hover{
+						color: $color__accent;
+					}
+				}
+			}
+
+			ul{
+				margin-left: 0;
+
+				li{
+					list-style: none;
+					margin-bottom: 20px;
+				}
+			}
+
+			.rsswidget{
+				color: $color__accent;
+
+				&:hover{
+					text-decoration: underline;
+					color: #000;
+				}
+			}
+
+			.rss-date{
+				display: block;
+				font-size: .85em;
+				color: #bfbfbf;
+			}
+
+			cite{
+				font-size: .85em;
+			}
+		}
+
+		.widget_recent_comments{
+			li{
+				font-style: italic;
+				color: #000;
+				
+				.comment-author-link,
+				a{
+					font-style: normal;
+					color: #6E6E6E;
+				}
+			}
+		}
+
+		/**
+		* Jetpack widgets
+		*/
+		.widget_contact_info{
+			.contact-map{
+				margin-bottom: 15px;
+			}
+
+			.confit-address,
+			.confit-phone,
+			.confit-hours{
+				font-size: .9em;
+			}
+		}
+
+		.widget_jetpack_display_posts_widget{
+			h4{
+				font-weight: 300;
+				@include font-size( 1 );
+			}
+		}
+
+		.widget_facebook_likebox{
+			.widget-title{
+				a{
+					color: #000;
+
+					&:hover{
+						color: $color__accent;
+					}
+				}
+			}
+		}
+
+		.widget-grofile{
+			.grofile-thumbnail{
+				border: 3px solid #000;
+			}
+
+			h4{
+				a{
+					color: #000;
+				}
+			}
+		}
+
+		.widget_image{
+			figure{
+				margin: 0;
+			}
+
+			.wp-caption-text{
+				margin-top: .5em;
+			}
+		}
+
+		.widget_rss_links{
+			a{
+				vertical-align: middle;
+				display: inline-block;
+				line-height: 1;
+			}
+		}
+	}
+
 	.site-info{
 		text-align: center;
 		padding: 50px 0;

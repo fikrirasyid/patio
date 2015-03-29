@@ -100,3 +100,36 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'patio_render_title' );
 endif;
+
+/**
+ * Footer widgets class
+ */
+function patio_footer_widget_class(){
+	// Basic footer widget class
+	$classes = array( 'footer-widgets-wrap' );
+
+	$active_widget = 0;
+
+	$widgets = range( 1, 4 );
+
+	foreach ( $widgets as $widget ) {		
+
+		// Determine widget id
+		if( $widget == 1 ){
+			$widget_id = 'footer';
+		} else {
+			$widget_id = 'footer-' . $widget;
+		}
+
+		// If the widget is active, adds widget count
+		if( is_active_sidebar( $widget_id ) ){
+			$active_widget++;			
+		}
+	}	
+
+	// Determine number fo active widget
+	$classes[] = 'column-' . $active_widget;
+
+	// Print the classes
+	echo implode( ' ', apply_filters( 'patio_footer_widget_class', $classes ) );
+}
