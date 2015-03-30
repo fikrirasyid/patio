@@ -37,3 +37,28 @@ input[type="submit"]{
 		}
 	}
 }
+
+// Main Nav fadeIn in mobile
+@keyframes main_nav_in_mobile{
+	0%{
+		top: 80px;
+		opacity: 0;
+	}
+
+	100%{
+		top: 60px;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes main_nav_in_mobile{
+	0%{
+		top: 80px;
+		opacity: 0;
+	}
+
+	100%{
+		top: 60px;
+		opacity: 1;
+	}
+}

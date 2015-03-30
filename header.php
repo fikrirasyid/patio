@@ -29,7 +29,10 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'patio' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+				<div class="menu-wrap">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>					
+				</div><!-- .menu-wrap -->
 			</nav><!-- #site-navigation -->
 		</div><!-- .wrap -->
 	</header><!-- #masthead -->

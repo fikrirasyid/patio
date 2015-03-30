@@ -15,7 +15,7 @@ body {
 }
 
 .wrap{
-	@include wrap( 1180px );
+	@include wrap( 90% );
 
 	&:after{
 		content:"";
@@ -23,6 +23,12 @@ body {
 		height:0; 
 		clear:both; 
 		visibility:hidden;		
+	}
+}
+
+@media screen and ( min-width: $size__breakpoint-desktop-large ){
+	.wrap{
+		@include wrap( 1180px );		
 	}
 }
 

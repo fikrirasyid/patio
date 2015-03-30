@@ -18,34 +18,11 @@
 			display: none;
 		}
 
-		&.column-1{
-			.footer-widgets{				
-				width: 100%;
-			}			
-		}
-
-		&.column-2{
-			.footer-widgets{				
-				width: 50%;
-			}
-		}
-
-		&.column-3{
-			.footer-widgets{				
-				width: 33%;
-			}			
-		}
-
-		&.column-4{
-			.footer-widgets{				
-				width: 25%;
-			}			
-		}
-
 		.footer-widgets{
 			display: inline-block;
 			vertical-align: top;
 			color: #6E6E6E;
+			width: 100%;
 
 			.widget{
 				padding-right: 40px;
@@ -222,6 +199,37 @@
 			&:hover{
 				color: $color__accent;
 			}
+		}
+	}
+}
+
+/* Desktop Large Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop-large ){
+	#colophon{
+		.footer-widgets-wrap{
+			&.column-1{
+				.footer-widgets{				
+					width: 100%;
+				}			
+			}
+
+			&.column-2{
+				.footer-widgets{				
+					width: 50%;
+				}
+			}
+
+			&.column-3{
+				.footer-widgets{				
+					width: 33%;
+				}			
+			}
+
+			&.column-4{
+				.footer-widgets{				
+					width: 25%;
+				}			
+			}			
 		}
 	}
 }

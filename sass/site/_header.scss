@@ -3,10 +3,13 @@
 
 	.wrap{
 		padding: 33px 0;
+		position: relative;
 	}
 
 	.site-branding{
 		float: left;
+		position: relative;
+		z-index: 100; // should be higher than #site-navigation
 	}
 
 	.site-title{
@@ -21,8 +24,4 @@
 			}
 		}
 	}
-}
-
-#site-navigation{
-	float: right;
 }

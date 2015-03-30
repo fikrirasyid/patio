@@ -107,7 +107,7 @@ svg:not(:root) {
 }
 
 figure {
-  margin: 1em 40px;
+  margin: 0;
 }
 
 hr {
@@ -229,9 +229,19 @@ select,
 textarea {
   color: #404040;
   font-family: "Chivo", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
+}
+@media screen and (min-width: 1200px) {
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 /**
@@ -878,9 +888,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .comment-body,
 .entry-content {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 15.75px;
+  font-size: 0.98438rem;
   line-height: 1.8;
+  /* Desktop Large Adjustment */
+}
+@media screen and (min-width: 1200px) {
+  .comment-body,
+  .entry-content {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
 }
 .comment-body a:hover,
 .entry-content a:hover {
@@ -892,34 +910,62 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
   margin-bottom: .5em;
   font-weight: 300;
-  font-size: 44px;
-  font-size: 2.75rem;
+  font-size: 30.8px;
+  font-size: 1.925rem;
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h1,
+  .entry-content h1 {
+    font-size: 35.2px;
+    font-size: 2.2rem;
+  }
 }
 .comment-body h2,
 .entry-content h2 {
   line-height: 1.2;
   margin-top: 1.5em;
   margin-bottom: .5em;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 25.2px;
+  font-size: 1.575rem;
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h2,
+  .entry-content h2 {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+  }
 }
 .comment-body h3,
 .entry-content h3 {
   line-height: 1.2;
   margin-top: 1.5em;
   margin-bottom: .5em;
-  font-size: 26.4px;
-  font-size: 1.65rem;
+  font-size: 19.6px;
+  font-size: 1.225rem;
   border-bottom: 1px dotted #b3b3b3;
   padding-bottom: .5em;
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h3,
+  .entry-content h3 {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+  }
 }
 .comment-body h4,
 .entry-content h4 {
   line-height: 1.5;
   margin-top: .4em;
   margin-bottom: .5em;
-  font-size: 22.4px;
-  font-size: 1.4rem;
+  font-size: 16.8px;
+  font-size: 1.05rem;
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h4,
+  .entry-content h4 {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+  }
 }
 .comment-body p,
 .entry-content p {
@@ -944,12 +990,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .comment-body blockquote,
 .entry-content blockquote {
-  margin: 1.5em 0;
-  padding: 1em 2em;
+  margin: .7em 0;
+  padding: .3em .7em;
   font-weight: 300;
   line-height: 1.6;
-  font-size: 28.8px;
-  font-size: 1.8rem;
+  font-size: 25.2px;
+  font-size: 1.575rem;
+}
+@media screen and (min-width: 1200px) {
+  .comment-body blockquote,
+  .entry-content blockquote {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+  }
 }
 .comment-body blockquote p:first-child,
 .entry-content blockquote p:first-child {
@@ -1072,11 +1125,20 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content table {
   border-top: 1px solid #8c8c8c;
   margin: 2em 0;
+  max-width: 100%;
+}
+.comment-body table thead,
+.entry-content table thead {
+  overflow-x: auto;
 }
 .comment-body table thead td,
 .entry-content table thead td {
   text-transform: uppercase;
   background: #ededed;
+}
+.comment-body table tbody,
+.entry-content table tbody {
+  overflow-x: auto;
 }
 .comment-body table tr td, .comment-body table th td,
 .entry-content table tr td,
@@ -1102,16 +1164,86 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 80%;
 }
+@media screen and (min-width: 1200px) {
+  .comment-body h1,
+  .entry-content h1 {
+    font-size: 38.5px;
+    font-size: 2.40625rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .comment-body h1,
+  .entry-content h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h2,
+  .entry-content h2 {
+    font-size: 31.5px;
+    font-size: 1.96875rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .comment-body h2,
+  .entry-content h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h3,
+  .entry-content h3 {
+    font-size: 23.1px;
+    font-size: 1.44375rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .comment-body h3,
+  .entry-content h3 {
+    font-size: 26.4px;
+    font-size: 1.65rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-body h4,
+  .entry-content h4 {
+    font-size: 19.6px;
+    font-size: 1.225rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .comment-body h4,
+  .entry-content h4 {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-body blockquote,
+  .entry-content blockquote {
+    padding: 1em 2em;
+    margin: 1.5em 0;
+  }
+}
 
 body#tinymce {
   padding: 30px 30px 0 !important;
   max-width: 660px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 15.75px;
+  font-size: 0.98438rem;
   line-height: 1.8;
+  /* Desktop Large Adjustment */
   font-size: 18px;
   color: #404040;
   background: white;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
 }
 body#tinymce a:hover {
   color: #FF8F00;
@@ -1121,31 +1253,55 @@ body#tinymce h1 {
   margin-top: 1.5em;
   margin-bottom: .5em;
   font-weight: 300;
-  font-size: 44px;
-  font-size: 2.75rem;
+  font-size: 30.8px;
+  font-size: 1.925rem;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h1 {
+    font-size: 35.2px;
+    font-size: 2.2rem;
+  }
 }
 body#tinymce h2 {
   line-height: 1.2;
   margin-top: 1.5em;
   margin-bottom: .5em;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 25.2px;
+  font-size: 1.575rem;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h2 {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+  }
 }
 body#tinymce h3 {
   line-height: 1.2;
   margin-top: 1.5em;
   margin-bottom: .5em;
-  font-size: 26.4px;
-  font-size: 1.65rem;
+  font-size: 19.6px;
+  font-size: 1.225rem;
   border-bottom: 1px dotted #b3b3b3;
   padding-bottom: .5em;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h3 {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+  }
 }
 body#tinymce h4 {
   line-height: 1.5;
   margin-top: .4em;
   margin-bottom: .5em;
-  font-size: 22.4px;
-  font-size: 1.4rem;
+  font-size: 16.8px;
+  font-size: 1.05rem;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h4 {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+  }
 }
 body#tinymce p {
   margin-top: .2em;
@@ -1161,12 +1317,18 @@ body#tinymce dfn, body#tinymce cite, body#tinymce em, body#tinymce i {
   font-style: italic;
 }
 body#tinymce blockquote {
-  margin: 1.5em 0;
-  padding: 1em 2em;
+  margin: .7em 0;
+  padding: .3em .7em;
   font-weight: 300;
   line-height: 1.6;
-  font-size: 28.8px;
-  font-size: 1.8rem;
+  font-size: 25.2px;
+  font-size: 1.575rem;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce blockquote {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+  }
 }
 body#tinymce blockquote p:first-child {
   margin-top: 0;
@@ -1258,10 +1420,17 @@ body#tinymce ol > li {
 body#tinymce table {
   border-top: 1px solid #8c8c8c;
   margin: 2em 0;
+  max-width: 100%;
+}
+body#tinymce table thead {
+  overflow-x: auto;
 }
 body#tinymce table thead td {
   text-transform: uppercase;
   background: #ededed;
+}
+body#tinymce table tbody {
+  overflow-x: auto;
 }
 body#tinymce table tr td, body#tinymce table th td {
   border-bottom: 1px solid #8c8c8c;
@@ -1282,9 +1451,69 @@ body#tinymce .post-password-form input[type="password"] {
   display: block;
   width: 80%;
 }
+@media screen and (min-width: 1200px) {
+  body#tinymce h1 {
+    font-size: 38.5px;
+    font-size: 2.40625rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  body#tinymce h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h2 {
+    font-size: 31.5px;
+    font-size: 1.96875rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  body#tinymce h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h3 {
+    font-size: 23.1px;
+    font-size: 1.44375rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  body#tinymce h3 {
+    font-size: 26.4px;
+    font-size: 1.65rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce h4 {
+    font-size: 19.6px;
+    font-size: 1.225rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  body#tinymce h4 {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce blockquote {
+    padding: 1em 2em;
+    margin: 1.5em 0;
+  }
+}
 body#tinymce blockquote p {
-  font-size: 33.6px;
-  font-size: 2.1rem;
+  font-size: 29.4px;
+  font-size: 1.8375rem;
+}
+@media screen and (min-width: 1200px) {
+  body#tinymce blockquote p {
+    font-size: 33.6px;
+    font-size: 2.1rem;
+  }
 }
 body#tinymce a {
   color: #000;
