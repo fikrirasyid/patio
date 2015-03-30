@@ -52,6 +52,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		display: none;
 
 		ul{
 			display: block;
@@ -82,22 +83,10 @@
 				display: block;
 			}
 		}
-	}
-}
 
-/* Small menu. */
-.menu-toggle {
-	display: none;
-}
-
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation ul {
-		display: none;
+		.nav-menu{
+			display: block;
+		}
 	}
 }
 
@@ -212,7 +201,12 @@
 			left: auto;
 		}
 
+		.menu-toggle{
+			display: none;
+		}
+
 		ul {
+			display: block;
 
 			ul {
 				float: left;
