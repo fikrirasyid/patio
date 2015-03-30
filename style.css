@@ -1714,8 +1714,8 @@ a:hover, a:active {
 }
 .post-navigation .nav-previous a .meta-nav,
 .post-navigation .nav-next a .meta-nav {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12.25px;
+  font-size: 0.76563rem;
   text-transform: uppercase;
   opacity: .75;
   display: block;
@@ -1725,14 +1725,14 @@ a:hover, a:active {
 @media screen and (min-width: 1200px) {
   .post-navigation .nav-previous a .meta-nav,
   .post-navigation .nav-next a .meta-nav {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 .post-navigation .nav-previous a .post-title,
 .post-navigation .nav-next a .post-title {
-  font-size: 22.75px;
-  font-size: 1.42188rem;
+  font-size: 17.5px;
+  font-size: 1.09375rem;
   text-shadow: 0 1px 2px #000;
   display: block;
   position: relative;
@@ -1742,8 +1742,8 @@ a:hover, a:active {
 @media screen and (min-width: 1200px) {
   .post-navigation .nav-previous a .post-title,
   .post-navigation .nav-next a .post-title {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -1889,6 +1889,65 @@ a:hover, a:active {
   .posts-navigation .nav-next a:after {
     font-size: 18px;
     font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .post-navigation .nav-previous a .meta-nav,
+  .post-navigation .nav-next a .meta-nav {
+    font-size: 13.125px;
+    font-size: 0.82031rem;
+  }
+}
+@media screen and (min-width: 1000px) and (min-width: 1200px) {
+  .post-navigation .nav-previous a .meta-nav,
+  .post-navigation .nav-next a .meta-nav {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .post-navigation .nav-previous a .post-title,
+  .post-navigation .nav-next a .post-title {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+@media screen and (min-width: 1000px) and (min-width: 1200px) {
+  .post-navigation .nav-previous a .post-title,
+  .post-navigation .nav-next a .post-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop Large Adjustment */
+@media screen and (min-width: 1200px) {
+  .post-navigation .nav-previous a .meta-nav,
+  .post-navigation .nav-next a .meta-nav {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .post-navigation .nav-previous a .meta-nav,
+  .post-navigation .nav-next a .meta-nav {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .post-navigation .nav-previous a .post-title,
+  .post-navigation .nav-next a .post-title {
+    font-size: 22.75px;
+    font-size: 1.42188rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .post-navigation .nav-previous a .post-title,
+  .post-navigation .nav-next a .post-title {
+    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 

@@ -161,7 +161,7 @@
 			}
 
 			.meta-nav{
-				@include font-size( 1 );
+				@include font-size( .875 );
 				text-transform: uppercase;
 				opacity: .75;
 				display: block;
@@ -170,7 +170,7 @@
 			}
 
 			.post-title{
-				@include font-size( 1.625 );
+				@include font-size( 1.25 );	
 				text-shadow: 0 1px 2px #000;
 				display: block;
 				position: relative;
@@ -349,5 +349,38 @@
 				}
 			}
 		}
+	}
+
+	.post-navigation{
+		.nav-previous,
+		.nav-next{
+			a{
+				.meta-nav{
+					@include font-size( .9375 );
+				}
+
+				.post-title{
+					@include font-size( 1.5 );			
+				}
+			}
+		}		
+	}	
+}
+
+/* Desktop Large Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop-large ){
+	.post-navigation{
+		.nav-previous,
+		.nav-next{
+			a{
+				.meta-nav{
+					@include font-size( 1 );
+				}
+
+				.post-title{
+					@include font-size( 1.625 );			
+				}
+			}
+		}		
 	}
 }
