@@ -1308,6 +1308,14 @@ body {
   visibility: hidden;
 }
 
+@media screen and (min-width: 1000px) {
+  .wrap {
+    display: block;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .wrap {
     display: block;
@@ -1747,8 +1755,8 @@ a:hover, a:active {
   padding: 0 0 45px;
 }
 
-/* Desktop Large Adjustment */
-@media screen and (min-width: 1200px) {
+/* Tablet landscape + Desktop Adjustment */
+@media screen and (min-width: 1000px) {
   .main-navigation .menu-wrap {
     background: none;
     box-shadow: none;
@@ -1772,13 +1780,13 @@ a:hover, a:active {
     font-size: 0.875rem;
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 1000px) and (min-width: 1200px) {
   .main-navigation ul ul {
     font-size: 16px;
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .main-navigation ul ul ul {
     left: -999em;
     top: 0;
@@ -1853,14 +1861,14 @@ a:hover, a:active {
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 1000px) and (min-width: 1200px) {
   .comment-navigation .nav-previous a:before,
   .posts-navigation .nav-previous a:before {
     font-size: 18px;
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .comment-navigation .nav-next a,
   .posts-navigation .nav-next a {
     margin-left: 0;
@@ -1876,7 +1884,7 @@ a:hover, a:active {
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 1000px) and (min-width: 1200px) {
   .comment-navigation .nav-next a:after,
   .posts-navigation .nav-next a:after {
     font-size: 18px;
@@ -2281,11 +2289,49 @@ a:hover, a:active {
   padding: 20px 0 0;
 }
 
+/* Tablet landscape + Desktop Adjustment */
+@media screen and (min-width: 1000px) {
+  .not-singular .hentry {
+    width: 470px;
+    height: 400px;
+    margin: 6px 4px;
+  }
+  .not-singular .hentry .entry-thumbnail {
+    width: 470px;
+    height: 400px;
+  }
+  .not-singular .hentry.three-column {
+    width: 309.5px;
+    height: 300px;
+  }
+  .not-singular .hentry.three-column .entry-thumbnail {
+    width: 309.5px;
+    height: 300px;
+  }
+  .not-singular .hentry.three-column .entry-excerpt {
+    display: none;
+  }
+
+  .singular .entry-header,
+  .singular .entry-content,
+  .singular .posts-navigation,
+  .singular .post-navigation,
+  .singular .comments-wrap {
+    width: 640px;
+    margin-left: 320px;
+  }
+  .singular .entry-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 270px;
+  }
+}
 /* Desktop Large Adjustment */
 @media screen and (min-width: 1200px) {
   .not-singular .hentry {
     width: 580px;
-    margin: 6px 4px;
     height: 435px;
   }
   .not-singular .hentry.three-column {
@@ -2296,9 +2342,6 @@ a:hover, a:active {
   .not-singular .hentry.three-column .entry-thumbnail {
     width: 382px;
     height: 325px;
-  }
-  .not-singular .hentry.three-column .entry-excerpt {
-    display: none;
   }
 
   .singular #main {
@@ -2325,10 +2368,6 @@ a:hover, a:active {
 }
 @media screen and (min-width: 1200px) {
   .singular .entry-footer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
     width: 330px;
   }
 }
@@ -2569,6 +2608,12 @@ a:hover, a:active {
   border-color: #FF8F00;
 }
 
+/* Tablet landscape + Desktop Adjustment */
+@media screen and (min-width: 1000px) {
+  .comment-list .children {
+    margin-left: 80px;
+  }
+}
 /* Desktop Large Adjustment */
 @media screen and (min-width: 1200px) {
   .comments-title {
@@ -2584,10 +2629,6 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 1200px) {
-  .comment-list .children {
-    margin-left: 80px;
-  }
-
   #reply-title {
     font-size: 26.25px;
     font-size: 1.64063rem;
@@ -2767,8 +2808,8 @@ a:hover, a:active {
   color: #FF8F00;
 }
 
-/* Desktop Large Adjustment */
-@media screen and (min-width: 1200px) {
+/* Tablet landscape + Desktop Adjustment */
+@media screen and (min-width: 1000px) {
   #colophon .footer-widgets-wrap.column-1 .footer-widgets {
     width: 100%;
   }

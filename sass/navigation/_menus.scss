@@ -190,8 +190,8 @@
 	}
 }
 
-/* Desktop Large Adjustment */
-@media screen and ( min-width: $size__breakpoint-desktop-large ){
+/* Tablet landscape + Desktop Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop ){
 	.main-navigation{
 
 		.menu-wrap{

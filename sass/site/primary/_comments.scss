@@ -186,16 +186,19 @@
 	}
 }
 
-/* Desktop Large Adjustment */
-@media screen and ( min-width: $size__breakpoint-desktop-large ){
-	.comments-title{
-		@include font-size( 1.875 );
-	}
-
+/* Tablet landscape + Desktop Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop ){
 	.comment-list{
 		.children{
 			margin-left: 80px;
 		}
+	}
+}
+
+/* Desktop Large Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop-large ){
+	.comments-title{
+		@include font-size( 1.875 );
 	}
 
 	#reply-title{		

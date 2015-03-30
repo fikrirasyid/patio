@@ -203,8 +203,8 @@
 	}
 }
 
-/* Desktop Large Adjustment */
-@media screen and ( min-width: $size__breakpoint-desktop-large ){
+/* Tablet landscape + Desktop Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop ){
 	#colophon{
 		.footer-widgets-wrap{
 			&.column-1{

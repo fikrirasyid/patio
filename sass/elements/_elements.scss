@@ -26,6 +26,12 @@ body {
 	}
 }
 
+@media screen and ( min-width: $size__breakpoint-desktop ){
+	.wrap{
+		@include wrap( 960px );		
+	}
+}
+
 @media screen and ( min-width: $size__breakpoint-desktop-large ){
 	.wrap{
 		@include wrap( 1180px );		
