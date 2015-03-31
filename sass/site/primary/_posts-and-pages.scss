@@ -32,6 +32,7 @@
 		margin: 6px 0;
 		padding: 30px;
 		overflow: hidden;
+		position: relative;
 
 		.entry-title{
 			@include font-size( 1.625 );
@@ -86,7 +87,6 @@
 		}
 
 		&.has-post-thumbnail{
-			position: relative;
 
 			.entry-thumbnail{
 				display: block;
@@ -144,18 +144,33 @@
 				}
 			}
 
+			.entry-header{
+				margin-left: 70px;
+			}
+
 			&:before{
 				content: '\f408';
 				font-family: 'Genericons';
 				position: absolute;
-				top: 15px;
-				left: 15px;
+				top: 33px;
+				left: 30px;
 				color: rgba(255,255,255,.8);
 				@include font-size( 2 );
 				line-height: 1;
 				background: rgba( 0, 0, 0, .2 );
 				padding: 7px;
 				@include border-radius( 5px );
+			}
+
+			&.has-post-thumbnail{
+				&:before{
+					top: 17px;
+					left: 15px;					
+				}
+
+				.entry-header{
+					margin-left: 0;
+				}
 			}
 		}		
 	}

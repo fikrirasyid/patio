@@ -2122,6 +2122,7 @@ a:hover, a:active {
   margin: 6px 0;
   padding: 30px;
   overflow: hidden;
+  position: relative;
 }
 .not-singular .hentry .entry-title {
   font-size: 22.75px;
@@ -2176,9 +2177,6 @@ a:hover, a:active {
 }
 .not-singular .hentry .entry-excerpt .more-link:hover {
   color: #FF8F00;
-}
-.not-singular .hentry.has-post-thumbnail {
-  position: relative;
 }
 .not-singular .hentry.has-post-thumbnail .entry-thumbnail {
   display: block;
@@ -2235,12 +2233,15 @@ a:hover, a:active {
 .not-singular .hentry.sticky .entry-thumbnail img {
   width: 100%;
 }
+.not-singular .hentry.sticky .entry-header {
+  margin-left: 70px;
+}
 .not-singular .hentry.sticky:before {
   content: '\f408';
   font-family: 'Genericons';
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 33px;
+  left: 30px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 28px;
   font-size: 1.75rem;
@@ -2257,6 +2258,13 @@ a:hover, a:active {
     font-size: 32px;
     font-size: 2rem;
   }
+}
+.not-singular .hentry.sticky.has-post-thumbnail:before {
+  top: 17px;
+  left: 15px;
+}
+.not-singular .hentry.sticky.has-post-thumbnail .entry-header {
+  margin-left: 0;
 }
 
 /**
