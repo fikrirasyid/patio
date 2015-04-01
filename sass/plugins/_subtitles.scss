@@ -1,0 +1,17 @@
+.not-singular{
+	span.entry-subtitle{
+		font-size: .7em;
+		opacity: .6;
+		margin-top: 2px;
+		margin-bottom: 10px;
+	}	
+}
+
+.singular{
+	span.entry-subtitle{
+		margin-top: 2px;
+		font-size: .55em;
+		opacity: .6;
+		line-height: 1.4;
+	}
+}
