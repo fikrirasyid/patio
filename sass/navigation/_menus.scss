@@ -255,7 +255,8 @@
 				}
 			}
 		}
-
+		
+		.page_item_has_children,
 		.menu-item-has-children{
 			> a{
 				&:after{
@@ -265,7 +266,8 @@
 					margin-left: 5px;
 				}
 			}
-
+	
+			.page_item_has_children,
 			.menu-item-has-children{
 				> a{
 					&:after{
@@ -281,7 +283,8 @@
 					background: $color__accent;
 					color: #000;
 				}
-
+				
+				.children,
 				.sub-menu{
 					box-shadow: 0 3px 3px rgba(0,0,0,.5);
 
@@ -294,7 +297,8 @@
 								color: #000;
 							}
 						}
-
+						
+						.children,
 						.sub-menu{
 							box-shadow: 2px 2px 2px rgba(0,0,0,.5);						
 						}
@@ -308,7 +312,8 @@
 				}
 			}
 		}
-
+		
+		.children,
 		.sub-menu{
 			background: $color__accent;
 		}

@@ -1807,37 +1807,69 @@ a:hover, a:active {
   .main-navigation li.current-menu-item > a, .main-navigation li:hover > a {
     color: #FF8F00;
   }
+  .main-navigation .page_item_has_children > a:after,
   .main-navigation .menu-item-has-children > a:after {
     content: '\f431';
     font-family: 'Genericons';
     vertical-align: middle;
     margin-left: 5px;
   }
+  .main-navigation .page_item_has_children .page_item_has_children > a:after,
+  .main-navigation .page_item_has_children .menu-item-has-children > a:after,
+  .main-navigation .menu-item-has-children .page_item_has_children > a:after,
   .main-navigation .menu-item-has-children .menu-item-has-children > a:after {
     content: '\f429';
   }
+  .main-navigation .page_item_has_children:hover,
   .main-navigation .menu-item-has-children:hover {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   }
+  .main-navigation .page_item_has_children:hover > a,
   .main-navigation .menu-item-has-children:hover > a {
     background: #FF8F00;
     color: #000;
   }
+  .main-navigation .page_item_has_children:hover .children,
+  .main-navigation .page_item_has_children:hover .sub-menu,
+  .main-navigation .menu-item-has-children:hover .children,
   .main-navigation .menu-item-has-children:hover .sub-menu {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   }
-  .main-navigation .menu-item-has-children:hover .sub-menu li.current-menu-item, .main-navigation .menu-item-has-children:hover .sub-menu li:hover {
+  .main-navigation .page_item_has_children:hover .children li.current-menu-item, .main-navigation .page_item_has_children:hover .children li:hover,
+  .main-navigation .page_item_has_children:hover .sub-menu li.current-menu-item,
+  .main-navigation .page_item_has_children:hover .sub-menu li:hover,
+  .main-navigation .menu-item-has-children:hover .children li.current-menu-item,
+  .main-navigation .menu-item-has-children:hover .children li:hover,
+  .main-navigation .menu-item-has-children:hover .sub-menu li.current-menu-item,
+  .main-navigation .menu-item-has-children:hover .sub-menu li:hover {
     box-shadow: none;
   }
-  .main-navigation .menu-item-has-children:hover .sub-menu li.current-menu-item a, .main-navigation .menu-item-has-children:hover .sub-menu li:hover a {
+  .main-navigation .page_item_has_children:hover .children li.current-menu-item a, .main-navigation .page_item_has_children:hover .children li:hover a,
+  .main-navigation .page_item_has_children:hover .sub-menu li.current-menu-item a,
+  .main-navigation .page_item_has_children:hover .sub-menu li:hover a,
+  .main-navigation .menu-item-has-children:hover .children li.current-menu-item a,
+  .main-navigation .menu-item-has-children:hover .children li:hover a,
+  .main-navigation .menu-item-has-children:hover .sub-menu li.current-menu-item a,
+  .main-navigation .menu-item-has-children:hover .sub-menu li:hover a {
     color: #000;
   }
+  .main-navigation .page_item_has_children:hover .children li .children,
+  .main-navigation .page_item_has_children:hover .children li .sub-menu,
+  .main-navigation .page_item_has_children:hover .sub-menu li .children,
+  .main-navigation .page_item_has_children:hover .sub-menu li .sub-menu,
+  .main-navigation .menu-item-has-children:hover .children li .children,
+  .main-navigation .menu-item-has-children:hover .children li .sub-menu,
+  .main-navigation .menu-item-has-children:hover .sub-menu li .children,
   .main-navigation .menu-item-has-children:hover .sub-menu li .sub-menu {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
+  .main-navigation .page_item_has_children:hover .children li a:hover,
+  .main-navigation .page_item_has_children:hover .sub-menu li a:hover,
+  .main-navigation .menu-item-has-children:hover .children li a:hover,
   .main-navigation .menu-item-has-children:hover .sub-menu li a:hover {
     background: #ffa533;
   }
+  .main-navigation .children,
   .main-navigation .sub-menu {
     background: #FF8F00;
   }
