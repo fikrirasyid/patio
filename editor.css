@@ -952,6 +952,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
   }
 }
+.comment-body h3.jp-relatedposts-headline,
+.entry-content h3.jp-relatedposts-headline {
+  border-bottom: none;
+}
 .comment-body h4,
 .entry-content h4 {
   line-height: 1.5;
@@ -1289,6 +1293,9 @@ body#tinymce h3 {
     font-size: 22.4px;
     font-size: 1.4rem;
   }
+}
+body#tinymce h3.jp-relatedposts-headline {
+  border-bottom: none;
 }
 body#tinymce h4 {
   line-height: 1.5;

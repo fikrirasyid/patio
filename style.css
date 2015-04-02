@@ -1001,6 +1001,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
   }
 }
+.comment-body h3.jp-relatedposts-headline,
+.entry-content h3.jp-relatedposts-headline {
+  border-bottom: none;
+}
 .comment-body h4,
 .entry-content h4 {
   line-height: 1.5;
