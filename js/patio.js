@@ -28,6 +28,15 @@ jQuery(document).ready(function($){
     	});
     } );
 
+    /*
+	* Set minimum height for hentry-wrap
+    */
+    if( $('.singular .entry-footer').length > 0 ){
+    	// var entry_footer_height = ;
+
+    	$('.singular .hentry-wrap').css({ 'min-height' : $('.singular .entry-footer').height() });
+    }
+
 	/**
 	* Civil Footnotes Support
 	* Slide the window instead of jumping it
