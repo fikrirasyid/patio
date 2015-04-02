@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 		}
 	}
 
-	$(window).load(function(){
+	$('#main').waitForImages(function(){
 		$('.entry-thumbnail').each(function(){
 			auto_adjust_thumbnail( $(this) );
 		});
@@ -21,11 +21,11 @@ jQuery(document).ready(function($){
 
 	// Auto adjust post thumbnail in infinite scroll
     $( document.body ).on( 'post-load', function () {
-    	setTimeout(function(){
-			$('.infinite-wrap:last .entry-thumbnail').each(function(){
+    	$('.infinite-wrap:last').waitForImages(function(){
+			$(this).find('.entry-thumbnail').each(function(){
 				auto_adjust_thumbnail( $(this) );
-			});
-    	}, 300 );
+			}); 
+    	});
     } );
 
 	/**
