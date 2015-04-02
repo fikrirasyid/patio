@@ -130,7 +130,7 @@ function patio_excerpt_more(){
 	$more_title 	= sprintf( __( 'Permanent link to %s', 'patio' ), $post->post_title );
 	$more_copy 		= __( 'Continue Reading', 'patio' );
 
-	return "&hellip; </p><p><a href='{$more_url}' title='{$more_title}' class='more-link'>{$more_copy}</a>";
+	return "&hellip; </p><p><a href='{$more_url}' title='{$more_title}' class='more-link'>{$more_copy} &rarr;</a>";
 }	
 add_filter( 'excerpt_more', 'patio_excerpt_more' );
 

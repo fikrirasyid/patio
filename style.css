@@ -2210,6 +2210,7 @@ a:hover, a:active {
 }
 .not-singular .hentry .entry-excerpt .more-link {
   text-decoration: none;
+  font-weight: bold;
 }
 .not-singular .hentry .entry-excerpt .more-link:hover {
   color: #FF8F00;
