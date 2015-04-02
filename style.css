@@ -1704,6 +1704,11 @@ a:hover, a:active {
   margin-bottom: 10px;
   position: relative;
   background-size: cover;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .post-navigation .nav-previous a:after,
 .post-navigation .nav-next a:after {
@@ -1749,6 +1754,10 @@ a:hover, a:active {
     font-size: 20px;
     font-size: 1.25rem;
   }
+}
+.post-navigation .nav-previous a:hover,
+.post-navigation .nav-next a:hover {
+  opacity: .75;
 }
 
 .comment-navigation {

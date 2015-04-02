@@ -148,6 +148,7 @@
 			margin-bottom: 10px;
 			position: relative;
 			background-size: cover;
+			@include smooth_transition();
 
 			&:after{
 				position: absolute;
@@ -176,6 +177,10 @@
 				position: relative;
 				z-index: 10;
 				line-height: 1.2;
+			}
+
+			&:hover{
+				opacity: .75;
 			}
 		}
 	}
