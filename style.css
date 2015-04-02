@@ -2228,16 +2228,16 @@ a:hover, a:active {
 .not-singular .hentry .entry-excerpt .more-link:hover {
   color: #FF8F00;
 }
-.not-singular .hentry.has-post-thumbnail .entry-thumbnail {
+.not-singular .hentry .entry-thumbnail {
   display: block;
   margin: -30px;
-  width: 580px;
-  height: 435px;
+  width: 130%;
+  height: 280px;
 }
-.not-singular .hentry.has-post-thumbnail .entry-thumbnail img {
+.not-singular .hentry .entry-thumbnail img {
   width: 100%;
 }
-.not-singular .hentry.has-post-thumbnail .entry-thumbnail.height-adjustment img {
+.not-singular .hentry .entry-thumbnail.height-adjustment img {
   width: auto;
   max-width: none;
   height: 100%;
@@ -2276,9 +2276,6 @@ a:hover, a:active {
 .not-singular .hentry.sticky {
   width: auto;
   display: block;
-}
-.not-singular .hentry.sticky .entry-thumbnail {
-  width: 106%;
 }
 .not-singular .hentry.sticky .entry-thumbnail img {
   width: 100%;
@@ -2450,6 +2447,13 @@ a:hover, a:active {
   .not-singular .hentry {
     width: 580px;
     height: 435px;
+  }
+  .not-singular .hentry .entry-thumbnail {
+    width: 580px;
+    height: 435px;
+  }
+  .not-singular .hentry.sticky .entry-thumbnail {
+    width: 106%;
   }
   .not-singular .hentry.three-column {
     width: 382px;
