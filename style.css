@@ -2499,6 +2499,13 @@ a:hover, a:active {
   background: #1B1B1B;
   color: white;
 }
+#comments .no-comments {
+  border: 1px dotted rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: .9em;
+}
 
 .comment-content a {
   word-wrap: break-word;
