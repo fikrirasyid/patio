@@ -19,6 +19,15 @@ jQuery(document).ready(function($){
 		});
 	});
 
+	$(window).resize(function(){
+		$('.entry-thumbnail').each(function(){
+			$(this).waitForImages(function(){
+				$(this).removeClass('height-adjustment');
+				auto_adjust_thumbnail( $(this) );				
+			});
+		});
+	});
+
 	// Auto adjust post thumbnail in infinite scroll
     $( document.body ).on( 'post-load', function () {
     	$('.infinite-wrap:last').waitForImages(function(){
