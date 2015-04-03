@@ -2400,6 +2400,39 @@ a:hover, a:active {
   padding: 20px 0 0;
 }
 
+/* Styling 404 page */
+.not-found input[type="text"],
+.not-found input[type="email"],
+.not-found input[type="url"],
+.not-found input[type="password"],
+.not-found input[type="search"] {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.not-found a {
+  text-decoration: none;
+}
+.not-found a:hover {
+  color: #FF8F00;
+}
+.not-found ul {
+  margin-left: 0;
+  padding-left: 2em;
+}
+.not-found .widget-title,
+.not-found .widgettitle {
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.not-found .search-form,
+.not-found .widget {
+  margin-bottom: 30px;
+}
+.not-found .search-submit {
+  padding: 15px 30px 13px;
+}
+
 /* Tablet landscape + Desktop Adjustment */
 @media screen and (min-width: 1000px) {
   .not-singular .hentry {
@@ -2440,6 +2473,55 @@ a:hover, a:active {
     left: 0;
     display: block;
     width: 270px;
+  }
+
+  .not-found .search-field {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .not-found .search-submit {
+    vertical-align: top;
+  }
+  .not-found .widget_recent_entries,
+  .not-found .widget_categories,
+  .not-found .widget_archive {
+    width: 309.5px;
+    min-height: 300px;
+    margin: 6px 4px;
+    padding: 25px;
+    display: inline-block;
+    vertical-align: top;
+    background: #EDEDED;
+    overflow: hidden;
+  }
+  .not-found .widget_recent_entries ul,
+  .not-found .widget_categories ul,
+  .not-found .widget_archive ul {
+    margin-right: 30px;
+    padding-left: 1.4em;
+  }
+  .not-found .widget_recent_entries ul li,
+  .not-found .widget_categories ul li,
+  .not-found .widget_archive ul li {
+    margin-bottom: 5px;
+  }
+  .not-found .widget_recent_entries .widget-title,
+  .not-found .widget_recent_entries .widgettitle,
+  .not-found .widget_categories .widget-title,
+  .not-found .widget_categories .widgettitle,
+  .not-found .widget_archive .widget-title,
+  .not-found .widget_archive .widgettitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .not-found .widget_tag_cloud {
+    background: #EDEDED;
+    margin: 6px 4px;
+    padding: 25px;
+    display: block;
+  }
+  .not-found .widget_tag_cloud .widgettitle {
+    margin-top: 0;
   }
 }
 /* Desktop Large Adjustment */
@@ -2487,6 +2569,14 @@ a:hover, a:active {
 @media screen and (min-width: 1200px) {
   .singular .entry-footer {
     width: 330px;
+  }
+
+  .not-found .widget_recent_entries,
+  .not-found .widget_categories,
+  .not-found .widget_archive {
+    width: 382px;
+    min-height: 325px;
+    margin-left: 4.7px;
   }
 }
 /*--------------------------------------------------------------
