@@ -135,12 +135,6 @@
 		&.sticky{
 			width: auto;
 			display: block;
-			
-			.entry-thumbnail{
-				img{
-					width: 100%;
-				}
-			}
 
 			.entry-header{
 				margin-left: 70px;
@@ -289,6 +283,12 @@
 				height: 400px;				
 			}
 
+			&.sticky{
+				.entry-thumbnail{						
+					width: 110%;
+				}
+			}	
+
 			&.three-column{
 				width: 309.5px;
 				height: 300px;
@@ -337,12 +337,6 @@
 				width: 580px;
 				height: 435px;					
 			}
-
-			&.sticky{
-				.entry-thumbnail{						
-					width: 106%;
-				}
-			}	
 
 			&.three-column{
 				width: 382px;

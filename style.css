@@ -2277,9 +2277,6 @@ a:hover, a:active {
   width: auto;
   display: block;
 }
-.not-singular .hentry.sticky .entry-thumbnail img {
-  width: 100%;
-}
 .not-singular .hentry.sticky .entry-header {
   margin-left: 70px;
 }
@@ -2414,6 +2411,9 @@ a:hover, a:active {
     width: 470px;
     height: 400px;
   }
+  .not-singular .hentry.sticky .entry-thumbnail {
+    width: 110%;
+  }
   .not-singular .hentry.three-column {
     width: 309.5px;
     height: 300px;
@@ -2451,9 +2451,6 @@ a:hover, a:active {
   .not-singular .hentry .entry-thumbnail {
     width: 580px;
     height: 435px;
-  }
-  .not-singular .hentry.sticky .entry-thumbnail {
-    width: 106%;
   }
   .not-singular .hentry.three-column {
     width: 382px;
