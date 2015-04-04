@@ -10,6 +10,7 @@ textarea {
 	@include font-size( 1 );
 	border-bottom: 3px solid #979797;
 	outline: none;
+	@include smooth_transition;	
 
 	&:focus {
 		color: $color__text-input-focus;

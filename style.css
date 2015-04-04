@@ -1490,6 +1490,11 @@ textarea {
   font-size: 0.875rem;
   border-bottom: 3px solid #979797;
   outline: none;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 @media screen and (min-width: 1200px) {
   input[type="text"],
