@@ -11,11 +11,24 @@
  * See: http://jetpack.me/support/infinite-scroll/
  */
 function patio_jetpack_setup() {
+	// Adding infinite scroll support
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'footer'    => 'page',
 		'posts_per_page' => 10
 	) );
+
+	// Adding site logo support
+	add_image_size( 'site-logo', 0, 39 );
+
+	$site_logo_args = array(
+	    'header-text' => array(
+	        'site-title'
+	    ),
+	    'size' => 'site-logo',
+	);
+
+	add_theme_support( 'site-logo', $site_logo_args );	
 }
 add_action( 'after_setup_theme', 'patio_jetpack_setup' );
 

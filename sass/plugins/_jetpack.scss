@@ -1,0 +1,22 @@
+/**
+ * Automatically hide the site-title if site-logo is added
+*/
+body{
+	&.has-site-logo{
+		#masthead{
+			.site-title{
+			    display: none; 
+			}
+
+			.site-logo-link{				
+			    max-height: 39px;
+			    display: inline-block !important;
+
+			    img{
+			    	width: auto;
+			    	height: 39px;
+			    }
+			}
+		}
+	}
+}

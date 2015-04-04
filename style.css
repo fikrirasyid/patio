@@ -3259,3 +3259,18 @@ object {
   opacity: .6;
   line-height: 1.4;
 }
+
+/**
+ * Automatically hide the site-title if site-logo is added
+*/
+body.has-site-logo #masthead .site-title {
+  display: none;
+}
+body.has-site-logo #masthead .site-logo-link {
+  max-height: 39px;
+  display: inline-block !important;
+}
+body.has-site-logo #masthead .site-logo-link img {
+  width: auto;
+  height: 39px;
+}
