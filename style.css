@@ -2458,6 +2458,40 @@ a:hover, a:active {
   .not-singular .hentry.three-column .entry-excerpt {
     display: none;
   }
+  .not-singular .hentry.three-column.format-aside .entry-excerpt {
+    display: block;
+  }
+  .not-singular .hentry.format-aside .more-link {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    z-index: 20;
+  }
+  .not-singular .hentry.format-aside:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 170px;
+    background: -moz-linear-gradient(top, rgba(237, 237, 237, 0.3) 30%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(237, 237, 237, 0.3)), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(237, 237, 237, 0.3) 30%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(237, 237, 237, 0.3) 30%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(237, 237, 237, 0.3) 30%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(237, 237, 237, 0.3) 30%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EDEDED', endColorstr='#EDEDED',GradientType=0 );
+    /* IE6-9 */
+  }
+  .not-singular .hentry.format-aside.has-post-thumbnail:after {
+    display: none;
+  }
 
   .singular .entry-header,
   .singular .entry-content,
