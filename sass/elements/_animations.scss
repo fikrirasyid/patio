@@ -39,7 +39,7 @@ input[type="submit"]{
 }
 
 // Main Nav fadeIn in mobile
-@keyframes main_nav_in_mobile{
+@keyframes main_nav_mobile_in{
 	0%{
 		top: 80px;
 		opacity: 0;
@@ -51,7 +51,7 @@ input[type="submit"]{
 	}
 }
 
-@-webkit-keyframes main_nav_in_mobile{
+@-webkit-keyframes main_nav_mobile_in{
 	0%{
 		top: 80px;
 		opacity: 0;
@@ -60,6 +60,30 @@ input[type="submit"]{
 	100%{
 		top: 60px;
 		opacity: 1;
+	}
+}
+
+@keyframes main_nav_mobile_out{
+	0%{
+		top: 60px;
+		opacity: 1;
+	}
+
+	100%{
+		top: 80px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes main_nav_mobile_out{
+	0%{
+		top: 60px;
+		opacity: 1;
+	}
+
+	100%{
+		top: 80px;
+		opacity: 0;
 	}
 }
 

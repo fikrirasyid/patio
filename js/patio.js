@@ -16,6 +16,25 @@ jQuery(document).ready(function($){
 		}, 600 );
 	});
 
+	/* Toggle Menu */
+	$('#masthead').on( 'click', '.menu-toggle', function(e){
+		e.preventDefault();
+
+		var button = $(this);
+
+		if( $('.main-navigation').is( '.toggled' ) ){
+			$('.main-navigation').addClass( 'fadeOut' );
+
+			setTimeout(function(){
+				$('.main-navigation').removeClass( 'toggled fadeOut' );
+				button.attr({ 'aria-expanded' : false });
+			}, 400 );
+		} else {
+			$('.main-navigation').addClass( 'toggled' );
+				button.attr({ 'aria-expanded' : true });
+		}
+	});
+
 	/**
 	* Auto adjust post thumbnail
 	*/

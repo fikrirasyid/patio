@@ -74,22 +74,6 @@
 		padding: 8px 15px;
 		border-bottom: 1px dotted rgba(255, 255, 255, .4);
 	}
-
-	&.toggled{
-		.menu-wrap{
-			-webkit-animation-name: main_nav_in_mobile;
-					animation-name: main_nav_in_mobile;
-			@include animate( .4s );
-
-			&:before{				
-				display: block;
-			}
-		}
-
-		.nav-menu{
-			display: block;
-		}
-	}
 }
 
 .comment-navigation,
@@ -194,6 +178,36 @@
 
 	&#comment-nav-above{
 		padding: 0 0 45px;
+	}
+}
+
+/* Mobile only */
+@media screen and ( max-width: $size__breakpoint-desktop ){
+	.main-navigation{
+		&.toggled{
+			.menu-wrap{
+				-webkit-animation-name: main_nav_mobile_in;
+						animation-name: main_nav_mobile_in;
+				@include animate( .4s );
+
+				&:before{				
+					display: block;
+				}
+			}
+
+			ul,
+			.nav-menu{
+				display: block;
+			}
+		}
+
+		&.fadeOut{
+			.menu-wrap{	
+				-webkit-animation-name: main_nav_mobile_out;
+						animation-name: main_nav_mobile_out;
+				@include animate( .4s );
+			}
+		}
 	}
 }
 

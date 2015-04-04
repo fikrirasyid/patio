@@ -1411,7 +1411,7 @@ input[type="submit"] {
   transition: all 0.2s ease-out;
 }
 
-@keyframes main_nav_in_mobile {
+@keyframes main_nav_mobile_in {
   0% {
     top: 80px;
     opacity: 0;
@@ -1421,7 +1421,7 @@ input[type="submit"] {
     opacity: 1;
   }
 }
-@-webkit-keyframes main_nav_in_mobile {
+@-webkit-keyframes main_nav_mobile_in {
   0% {
     top: 80px;
     opacity: 0;
@@ -1429,6 +1429,26 @@ input[type="submit"] {
   100% {
     top: 60px;
     opacity: 1;
+  }
+}
+@keyframes main_nav_mobile_out {
+  0% {
+    top: 60px;
+    opacity: 1;
+  }
+  100% {
+    top: 80px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes main_nav_mobile_out {
+  0% {
+    top: 60px;
+    opacity: 1;
+  }
+  100% {
+    top: 80px;
+    opacity: 0;
   }
 }
 @keyframes reply_respond {
@@ -1692,20 +1712,6 @@ a:hover, a:active {
   padding: 8px 15px;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
 }
-.main-navigation.toggled .menu-wrap {
-  -webkit-animation-name: main_nav_in_mobile;
-  animation-name: main_nav_in_mobile;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.main-navigation.toggled .menu-wrap:before {
-  display: block;
-}
-.main-navigation.toggled .nav-menu {
-  display: block;
-}
 
 .comment-navigation,
 .posts-navigation {
@@ -1839,6 +1845,32 @@ a:hover, a:active {
   padding: 0 0 45px;
 }
 
+/* Mobile only */
+@media screen and (max-width: 1000px) {
+  .main-navigation.toggled .menu-wrap {
+    -webkit-animation-name: main_nav_mobile_in;
+    animation-name: main_nav_mobile_in;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .main-navigation.toggled .menu-wrap:before {
+    display: block;
+  }
+  .main-navigation.toggled ul,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
+  .main-navigation.fadeOut .menu-wrap {
+    -webkit-animation-name: main_nav_mobile_out;
+    animation-name: main_nav_mobile_out;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
 /* Tablet landscape + Desktop Adjustment */
 @media screen and (min-width: 1000px) {
   .main-navigation .menu-wrap {
