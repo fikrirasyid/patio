@@ -2399,6 +2399,12 @@ a:hover, a:active {
 .singular .entry-footer .comment-link:before {
   content: '\f300';
 }
+.singular .entry-footer .edit-link {
+  border-top: 1px solid #D3D0D0;
+}
+.singular .entry-footer .edit-link:before {
+  content: '\f411';
+}
 .singular .entry-footer a {
   text-decoration: none;
   color: #575757;

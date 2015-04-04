@@ -246,6 +246,14 @@
 			}
 		}
 
+		.edit-link{
+			border-top: 1px solid #D3D0D0;			
+
+			&:before{
+				content: '\f411';
+			}
+		}
+
 		a{
 			text-decoration: none;
 			color: #575757;

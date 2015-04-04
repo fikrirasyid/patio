@@ -133,7 +133,7 @@ function patio_entry_footer() {
 	echo '</span>';
 
 
-	edit_post_link( __( 'Edit', 'patio' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'patio' ), '<span class="edit-link item">', '</span>' );
 }
 endif;
 
