@@ -87,3 +87,52 @@ input[type="submit"]{
 		opacity: 1;
 	}
 }
+
+// Toggle search
+@keyframes search_wrap_in{
+	0%{
+		top: 20px;
+		opacity: 0;
+	}
+
+	100%{
+		top: 0;
+		opacity: 1;
+	}	
+}
+
+@-webkit-keyframes search_wrap_in{
+	0%{
+		top: 20px;
+		opacity: 0;
+	}
+
+	100%{
+		top: 0;
+		opacity: 1;
+	}	
+}
+
+@keyframes search_wrap_out{
+	0%{
+		top: 0;
+		opacity: 1;
+	}
+
+	100%{
+		top: 20px;
+		opacity: 0;
+	}	
+}
+
+@-webkit-keyframes search_wrap_out{
+	0%{
+		top: 0;
+		opacity: 1;
+	}
+
+	100%{
+		top: 20px;
+		opacity: 0;
+	}	
+}

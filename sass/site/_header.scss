@@ -25,3 +25,37 @@
 		}
 	}
 }
+
+.search-toggle{
+	padding: 0;
+	background: 0;
+	box-shadow: none;
+	@include border-radius( 0 );
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-top: -3px;
+	z-index: 60; // should be higher than #site-navigation
+	position: relative;
+	
+	&:active,
+	&:focus,
+	&:hover{
+		background: none;
+	}
+
+	&:before{
+		font-family: 'Genericons';			
+		content: '\f400';
+		padding: 8px;
+		display: inline-block;
+		font-size: 24px;
+	}
+}
+
+/* Tablet landscape + Desktop Adjustment */
+@media screen and ( min-width: $size__breakpoint-desktop ){
+	.search-toggle{
+		margin-top: 0;
+	}
+}

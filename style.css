@@ -1451,6 +1451,46 @@ input[type="submit"] {
     opacity: 1;
   }
 }
+@keyframes search_wrap_in {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes search_wrap_in {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes search_wrap_out {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 20px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes search_wrap_out {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 20px;
+    opacity: 0;
+  }
+}
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
@@ -1605,7 +1645,7 @@ a:hover, a:active {
   background: #FF8F00;
   position: absolute;
   top: -6px;
-  right: 15px;
+  right: 60px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -1622,12 +1662,14 @@ a:hover, a:active {
   height: 40px;
   float: right;
   margin-top: -3px;
+  margin-right: 45px;
 }
 .main-navigation .menu-toggle:before {
   font-family: 'Genericons';
   content: '\f419';
-  padding: 12px;
+  padding: 8px;
   display: inline-block;
+  font-size: 24px;
 }
 .main-navigation ul {
   list-style: none;
@@ -1804,6 +1846,7 @@ a:hover, a:active {
     box-shadow: none;
     top: 0;
     left: auto;
+    right: 45px;
   }
   .main-navigation .menu-toggle {
     display: none;
@@ -2164,6 +2207,38 @@ a:hover, a:active {
   color: #FF8F00;
 }
 
+.search-toggle {
+  padding: 0;
+  background: 0;
+  box-shadow: none;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: -3px;
+  z-index: 60;
+  position: relative;
+}
+.search-toggle:active, .search-toggle:focus, .search-toggle:hover {
+  background: none;
+}
+.search-toggle:before {
+  font-family: 'Genericons';
+  content: '\f400';
+  padding: 8px;
+  display: inline-block;
+  font-size: 24px;
+}
+
+/* Tablet landscape + Desktop Adjustment */
+@media screen and (min-width: 1000px) {
+  .search-toggle {
+    margin-top: 0;
+  }
+}
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -2942,6 +3017,74 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 10.5 Footer
 --------------------------------------------------------------*/
+#search-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.98);
+  z-index: 100;
+  display: none;
+}
+#search-wrap.active {
+  display: block;
+  -webkit-animation-name: search_wrap_in;
+  animation-name: search_wrap_in;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#search-wrap.fadeOut {
+  -webkit-animation-name: search_wrap_out;
+  animation-name: search_wrap_out;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#search-wrap .wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#search-wrap form {
+  margin-right: 50px;
+}
+#search-wrap .search-field {
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+#search-wrap .search-submit {
+  display: none;
+}
+#search-wrap .search-toggle-close {
+  padding: 0;
+  background: 0;
+  box-shadow: none;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 3px;
+}
+#search-wrap .search-toggle-close:before {
+  font-family: 'Genericons';
+  content: '\f406';
+  padding: 12px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.admin-bar #search-wrap .wrap {
+  padding-top: 74px;
+}
+
 #colophon {
   background: white;
   border-top: 1px solid #CFCFCF;
@@ -3094,8 +3237,34 @@ a:hover, a:active {
   color: #FF8F00;
 }
 
+/* WordPress' admin bar breakpoint */
+@media screen and (min-width: 783px) {
+  .admin-bar #search-wrap .wrap {
+    padding-top: 60px;
+  }
+}
 /* Tablet landscape + Desktop Adjustment */
 @media screen and (min-width: 1000px) {
+  #search-wrap .wrap {
+    padding-top: 35px;
+  }
+  #search-wrap .search-field {
+    font-size: 42px;
+    font-size: 2.625rem;
+  }
+}
+@media screen and (min-width: 1000px) and (min-width: 1200px) {
+  #search-wrap .search-field {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .admin-bar #search-wrap .wrap {
+    padding-top: 65px;
+  }
+
   #colophon .footer-widgets-wrap.column-1 .footer-widgets {
     width: 100%;
   }

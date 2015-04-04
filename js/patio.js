@@ -1,4 +1,21 @@
 jQuery(document).ready(function($){
+	/* Toggle search */
+	$('#masthead').on( 'click', '.search-toggle', function(e){
+		e.preventDefault();
+
+		$('#search-wrap').toggleClass( 'active' );
+		$('#search-wrap .search-field').focus();
+	});
+
+	$('#search-wrap').on( 'click', '.search-toggle-close', function(e){
+		e.preventDefault();
+		$('#search-wrap').addClass( 'fadeOut' );
+
+		setTimeout(function(){
+			$('#search-wrap').removeClass( 'active fadeOut' );
+		}, 600 );
+	});
+
 	/**
 	* Auto adjust post thumbnail
 	*/

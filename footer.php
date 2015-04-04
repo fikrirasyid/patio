@@ -12,6 +12,13 @@
 		<?php endif; ?>
 
 	</div><!-- #content -->
+	
+	<div id="search-wrap">
+		<div class="wrap">
+			<button class="search-toggle-close"><?php _e( 'Close Search', 'patio' ); ?></button>
+			<?php get_search_form(); ?>
+		</div><!-- .wrap -->
+	</div><!-- #search-wrap -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrap">

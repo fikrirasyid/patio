@@ -23,7 +23,7 @@
 			background: $color__accent;
 			position: absolute;
 			top: -6px;
-			right: 15px;
+			right: 60px;
 			-webkit-transform: rotate(-45deg);
 			-moz-transform: rotate(-45deg);
  			-o-transform: rotate(-45deg);	
@@ -39,12 +39,14 @@
 		height: 40px;
 		float: right;
 		margin-top: -3px;
+		margin-right: 45px;
 
 		&:before{
 			font-family: 'Genericons';			
 			content: '\f419';
-			padding: 12px;
+			padding: 8px;
 			display: inline-block;
+			font-size: 24px;
 		}
 	}
 
@@ -204,6 +206,7 @@
 			box-shadow: none;
 			top: 0;
 			left: auto;
+			right: 45px;
 		}
 
 		.menu-toggle{

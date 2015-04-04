@@ -1,3 +1,74 @@
+#search-wrap{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba( 255, 255, 255, .98 );
+	z-index: 100; // Should be higher than menu
+	display: none;
+
+	&.active{
+		display: block;
+		-webkit-animation-name: search_wrap_in;
+				animation-name: search_wrap_in;
+		@include animate( .6s );
+	}
+
+	&.fadeOut{
+		-webkit-animation-name: search_wrap_out;
+				animation-name: search_wrap_out;
+		@include animate( .6s );
+	}
+
+	.wrap{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	form{
+		margin-right: 50px;
+	}
+
+	.search-field{
+		box-sizing: border-box;
+		border-top: none;
+		border-right: none;
+		border-left: none;		
+	}
+
+	.search-submit{
+		display: none;
+	}
+
+	.search-toggle-close{
+		padding: 0;
+		background: 0;
+		box-shadow: none;
+		@include border-radius( 0 );
+		width: 40px;
+		height: 40px;
+		float: right;
+		margin-top: 3px;
+
+		&:before{
+			font-family: 'Genericons';			
+			content: '\f406';
+			padding: 12px;
+			display: inline-block;
+			font-size: 16px;
+		}		
+	}
+}
+
+.admin-bar{
+	#search-wrap{
+		.wrap{
+			padding-top: 74px;
+		}
+	}
+}
+
 #colophon{
 	background: white;
 	border-top: 1px solid $color__border;
@@ -203,8 +274,37 @@
 	}
 }
 
+/* WordPress' admin bar breakpoint */
+@media screen and (min-width: 783px ){
+	.admin-bar{
+		#search-wrap{
+			.wrap{
+				padding-top: 60px;
+			}
+		}
+	}	
+}
+
 /* Tablet landscape + Desktop Adjustment */
 @media screen and ( min-width: $size__breakpoint-desktop ){
+	#search-wrap{
+		.wrap{				
+			padding-top: 35px;
+		}
+
+		.search-field{
+			@include font-size( 3 );
+		}
+	}
+
+	.admin-bar{
+		#search-wrap{
+			.wrap{				
+				padding-top: 65px;
+			}
+		}
+	}
+
 	#colophon{
 		.footer-widgets-wrap{
 			&.column-1{

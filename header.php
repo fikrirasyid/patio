@@ -31,6 +31,8 @@
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			</div><!-- .site-branding -->
+			
+			<button class="search-toggle"><?php _e( 'Search', 'patio' ); ?></button>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'patio' ); ?></button>
