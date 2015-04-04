@@ -163,6 +163,9 @@
 .comment-list{
 	#respond{
 		padding-bottom: 30px;
+		-webkit-animation-name: reply_respond;
+				animation-name: reply_respond;
+		@include animate( .4s );		
 	}
 
 	.depth-2{

@@ -1431,6 +1431,26 @@ input[type="submit"] {
     opacity: 1;
   }
 }
+@keyframes reply_respond {
+  0% {
+    margin-left: -20px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reply_respond {
+  0% {
+    margin-left: -20px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
@@ -2828,6 +2848,12 @@ a:hover, a:active {
 
 .comment-list #respond {
   padding-bottom: 30px;
+  -webkit-animation-name: reply_respond;
+  animation-name: reply_respond;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 .comment-list .depth-2 #respond .comment-form-author,
 .comment-list .depth-2 #respond .comment-form-email,
