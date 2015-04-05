@@ -69,12 +69,6 @@ function patio_setup() {
 		'aside', 'image'
 	) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'patio_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-
 	// Adding editor style
 	add_editor_style( array(
 		'//fonts.googleapis.com/css?family=Chivo:400,400italic,900,900italic',
