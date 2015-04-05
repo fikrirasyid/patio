@@ -27,7 +27,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php edit_post_link( __( 'Edit', 'patio' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Edit', 'patio' ), '<span class="edit-link item">', '</span>' ); ?>
 		</footer><!-- .entry-footer -->
 	</div><!-- .hentry-wrap -->
 </article><!-- #post-## -->
