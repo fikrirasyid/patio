@@ -1,284 +1,311 @@
-# Copyright (C) 2015 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: _s 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-01-06 02:24:02+00:00\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-04-05 11:03+0700\n"
+"PO-Revision-Date: 2015-04-05 11:06+0700\n"
+"Last-Translator: Fikri Rasyid <fikrirasyid@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_attr_e\n"
+"X-Poedit-SearchPath-0: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/"
+"patio\n"
 
-#: 404.php:15
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
 
-#: 404.php:27
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/404.php:27
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-
-#: 404.php:44
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/404.php:44
+#, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:35 comments.php:52
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:37
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:59
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:36 comments.php:53
-msgid "&larr; Older Comments"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:40
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:62
+msgid "Older Comments"
 msgstr ""
 
-#: comments.php:37 comments.php:54
-msgid "Newer Comments &rarr;"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:41
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:63
+msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:64
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/comments.php:75
 msgid "Comments are closed."
 msgstr ""
 
-#: content-none.php:13
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-none.php:13
 msgid "Nothing Found"
 msgstr ""
 
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: content-page.php:18 content-single.php:20 content.php:29
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-page.php:23
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-single.php:25
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:25 inc/template-tags.php:126
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-page.php:30
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:136
 msgid "Edit"
 msgstr ""
 
-#. translators: %s: Name of current post
-
-#: content.php:22
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content-search.php:9
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/content.php:9
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/functions.php:138
+#, php-format
+msgid "Permanent link to %s"
 msgstr ""
 
-#: footer.php:15
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/footer.php:18
+msgid "Close Search"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/footer.php:52
 msgid "http://wordpress.org/"
 msgstr ""
 
-#: footer.php:15
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/footer.php:52
+#, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:17
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/footer.php:54
+#, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:53 header.php:31
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/functions.php:53
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/header.php:38
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:88
-msgid "Sidebar"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/functions.php:88
+#, php-format
+msgid "Footer %d"
 msgstr ""
 
-#: header.php:22
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/functions.php:139
+msgid "Continue Reading"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/header.php:22
 msgid "Skip to content"
 msgstr ""
 
-#: inc/extras.php:64
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/header.php:35
+msgid "Search"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/customizer.php:44
+msgid "Error generating color scheme. Please try again."
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/customizer.php:51
+msgid "Color scheme cannot be generated. Please activate Patio theme first."
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/extras.php:83
+#, php-format
 msgid "Page %s"
 msgstr ""
 
-#: inc/template-tags.php:23
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/template-tags.php:27
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:27
 msgid "Older posts"
 msgstr ""
 
-#: inc/template-tags.php:31
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:31
 msgid "Newer posts"
 msgstr ""
 
-#: inc/template-tags.php:56
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:56
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:86
-msgctxt "post date"
-msgid "Posted on %s"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:96
+msgid "Add your comment"
 msgstr ""
 
-#: inc/template-tags.php:91
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:108 inc/template-tags.php:114
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:110
-msgid "Posted in %1$s"
-msgstr ""
-
-#: inc/template-tags.php:116
-msgid "Tagged %1$s"
-msgstr ""
-
-#: inc/template-tags.php:122
-msgid "Leave a comment"
-msgstr ""
-
-#: inc/template-tags.php:122
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:96
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:132
 msgid "1 Comment"
 msgstr ""
 
-#: inc/template-tags.php:122
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:96
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:132
 msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:110
+#, php-format
+msgid "Posts written by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:119
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:125
+msgid ", "
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:132
+msgid "Leave a comment"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:153
+#, php-format
 msgid "Category: %s"
 msgstr ""
 
-#: inc/template-tags.php:145
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:155
+#, php-format
 msgid "Tag: %s"
 msgstr ""
 
-#: inc/template-tags.php:147
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:157
+#, php-format
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:149
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:159
+#, php-format
 msgid "Year: %s"
 msgstr ""
 
-#: inc/template-tags.php:149
-msgctxt "yearly archives date format"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:159
 msgid "Y"
 msgstr ""
 
-#: inc/template-tags.php:151
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:161
+#, php-format
 msgid "Month: %s"
 msgstr ""
 
-#: inc/template-tags.php:151
-msgctxt "monthly archives date format"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:161
 msgid "F Y"
 msgstr ""
 
-#: inc/template-tags.php:153
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:163
+#, php-format
 msgid "Day: %s"
 msgstr ""
 
-#: inc/template-tags.php:153
-msgctxt "daily archives date format"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:163
 msgid "F j, Y"
 msgstr ""
 
-#: inc/template-tags.php:155
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:166
 msgid "Asides"
 msgstr ""
 
-#: inc/template-tags.php:157
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:168
 msgid "Galleries"
 msgstr ""
 
-#: inc/template-tags.php:159
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:170
 msgid "Images"
 msgstr ""
 
-#: inc/template-tags.php:161
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:172
 msgid "Videos"
 msgstr ""
 
-#: inc/template-tags.php:163
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:174
 msgid "Quotes"
 msgstr ""
 
-#: inc/template-tags.php:165
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:176
 msgid "Links"
 msgstr ""
 
-#: inc/template-tags.php:167
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:178
 msgid "Statuses"
 msgstr ""
 
-#: inc/template-tags.php:169
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:180
 msgid "Audio"
 msgstr ""
 
-#: inc/template-tags.php:171
-msgctxt "post format archive title"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:182
 msgid "Chats"
 msgstr ""
 
-#: inc/template-tags.php:173
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:185
+#, php-format
 msgid "Archives: %s"
 msgstr ""
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-
-#: inc/template-tags.php:177
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:189
+#, php-format
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:179
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/inc/template-tags.php:191
 msgid "Archives"
 msgstr ""
 
-#: search.php:16
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/search.php:16
+#, php-format
 msgid "Search Results for: %s"
 msgstr ""
-#. Theme Name of the plugin/theme
-msgid "_s"
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/searchform.php:3
+msgid "Search for:"
 msgstr ""
 
-#. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/single.php:19
+msgid "See Next"
 msgstr ""
 
-#. Description of the plugin/theme
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/single.php:20
+msgid "Next post:"
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "Automattic"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/single.php:22
+msgid "Previously"
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "http://automattic.com/"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/patio/single.php:23
+msgid "Previous post:"
 msgstr ""
