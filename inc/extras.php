@@ -31,8 +31,14 @@ add_filter( 'body_class', 'patio_body_classes' );
 function patio_post_classes( $classes ){
 	global $wp_query, $post;
 
+	if( isset( $wp_query->query_vars['paged'] ) ){
+		$paged = $wp_query->query_vars['paged'];
+	} else {
+		$paged = 1;
+	}
+
 	// Skip sticky post
-	if( is_sticky( $post->ID ) ){
+	if( is_sticky( $post->ID ) && $paged < 2 ){
 		return $classes;
 	}
 
