@@ -119,7 +119,7 @@ if( ! function_exists( 'patio_color_scheme' ) ) :
 function patio_color_scheme(){
 	$name = 'link_color_scheme';
 
-	$color_scheme = get_theme_mod( $name, 'false' );
+	$color_scheme = get_theme_mod( $name, false );
 
 	if( $color_scheme ){
 		wp_add_inline_style( 'patio-style', $color_scheme );
