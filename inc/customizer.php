@@ -12,8 +12,6 @@
  */
 function patio_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	// Remove jetpack's site-logo header text control. We're doing it automatically
 	// logo exists means hidden text. vice versa.
