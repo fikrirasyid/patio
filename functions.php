@@ -191,11 +191,6 @@ function patio_post_nav_background() {
 add_action( 'wp_enqueue_scripts', 'patio_post_nav_background' );
 
 /**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
-
-/**
  * Load simple color adjuster library
  */
 if( ! class_exists( 'Patio_Simple_Color_Adjuster' ) ){
