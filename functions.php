@@ -119,6 +119,22 @@ function patio_scripts() {
 add_action( 'wp_enqueue_scripts', 'patio_scripts' );
 
 /**
+ * Display custom color scheme
+ */
+if( ! function_exists( 'patio_color_scheme' ) ) :
+function patio_color_scheme(){
+	$name = 'link_color_scheme';
+
+	$color_scheme = get_theme_mod( $name, 'false' );
+
+	if( $color_scheme ){
+		wp_add_inline_style( 'patio-style', $color_scheme );
+	}
+}
+endif; // patio_color_scheme
+add_action( 'wp_enqueue_scripts', 'patio_color_scheme' );
+
+/**
  * Modifying excerpt suffix
  */
 function patio_excerpt_more(){
@@ -179,6 +195,12 @@ add_action( 'wp_enqueue_scripts', 'patio_post_nav_background' );
  */
 //require get_template_directory() . '/inc/custom-header.php';
 
+/**
+ * Load simple color adjuster library
+ */
+if( ! class_exists( 'Patio_Simple_Color_Adjuster' ) ){
+	require get_template_directory() . '/inc/simple-color-adjuster.php';
+}
 /**
  * Custom template tags for this theme.
  */

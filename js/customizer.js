@@ -12,21 +12,25 @@
 		} );
 	} );
 
-	// Header text color.
-	wp.customize( 'header_textcolor', function( value ) {
+	// Link color.
+	wp.customize( 'link_color', function( value ) {
 		value.bind( function( to ) {
-			if ( 'blank' === to ) {
-				$( '.site-title' ).css( {
-					'clip': 'rect(1px, 1px, 1px, 1px)',
-					'position': 'absolute'
-				} );
-			} else {
-				$( '.site-title' ).css( {
-					'clip': 'auto',
-					'color': to,
-					'position': 'relative'
-				} );
-			}
+						
+			// Updating the color scheme
+			var link_color = to.substr( 1 );
+
+			$.getJSON( patio_customizer_params.generate_color_scheme_endpoint, { link_color : link_color }, function( data ){
+				if( true == data.status ){
+					$('body').append( '<style type="text/css" media="screen">'+data.colorscheme+'</style>');
+				} else {
+					alert( patio_customizer_params.generate_color_scheme_error_message );
+				}
+			});
 		} );
-	} );
+	} );	
+
+	// Clear temporary settings if customizer is closed
+	window.addEventListener("beforeunload", function (e) {
+		$.post( patio_customizer_params.clear_customizer_settings );
+	});		
 } )( jQuery );
