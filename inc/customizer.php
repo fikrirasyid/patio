@@ -15,6 +15,10 @@ function patio_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+	// Remove jetpack's site-logo header text control. We're doing it automatically
+	// logo exists means hidden text. vice versa.
+	$wp_customize->remove_control( 'site_logo_header_text' );
+
 	// Adding link color control
 	$wp_customize->add_setting( 'link_color', array(
 		'default'           => '#FF8F00',
@@ -28,7 +32,7 @@ function patio_customize_register( $wp_customize ) {
 		'section'     => 'colors',
 	) ) );	
 }
-add_action( 'customize_register', 'patio_customize_register' );
+add_action( 'customize_register', 'patio_customize_register', 20 );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
