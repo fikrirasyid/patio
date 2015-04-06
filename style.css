@@ -3333,7 +3333,7 @@ a:hover, a:active {
 11.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
+.infinite-scroll #main .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
   display: none;
@@ -3357,15 +3357,15 @@ a:hover, a:active {
   height: 73px;
 }
 
-#infinite-handle {
+.infinite-scroll #infinite-handle {
   padding: 40px 0;
 }
-#infinite-handle span {
+.infinite-scroll #infinite-handle span {
   background: none;
   display: block;
   padding: 0;
 }
-#infinite-handle span button {
+.infinite-scroll #infinite-handle span button {
   background: #2E2E2E;
   color: white;
   text-decoration: none;
@@ -3381,12 +3381,12 @@ a:hover, a:active {
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
-  #infinite-handle span button {
+  .infinite-scroll #infinite-handle span button {
     font-size: 18px;
     font-size: 1.125rem;
   }
 }
-#infinite-handle span button:hover {
+.infinite-scroll #infinite-handle span button:hover {
   padding: 15px 25px;
   background: #FF8F00;
   font-size: 15.75px;
@@ -3396,7 +3396,7 @@ a:hover, a:active {
   line-height: 1;
 }
 @media screen and (min-width: 1200px) {
-  #infinite-handle span button:hover {
+  .infinite-scroll #infinite-handle span button:hover {
     font-size: 18px;
     font-size: 1.125rem;
   }
