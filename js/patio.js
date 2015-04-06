@@ -73,6 +73,12 @@ jQuery(document).ready(function($){
     	});
     } );
 
+    /* If there is #infinite-handle printed, make sure that the body has .infinite-scroll class */
+    /* There is an bug where the the handle is still being printed even though user disable infinite scroll at dashboard > settings > reading */
+    if( $('#infinite-handle').length > 0 ){
+    	$('body').addClass( 'infinite-scroll' );
+    }
+
     /*
 	* Set minimum height for hentry-wrap
     */
