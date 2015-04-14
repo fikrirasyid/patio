@@ -234,13 +234,13 @@
 				float: left;
 				position: absolute;
 				top: 2.4em;
-				left: -999em;
+				display: none;
 				z-index: 99999;
 				margin-left: 0;
 				@include font-size( 1 );
 
 				ul {
-					left: -999em;
+					display: none;
 					top: 0;
 				}
 
@@ -263,6 +263,7 @@
 
 			li:hover > ul {
 				left: auto;
+				display: block;
 			}
 		}
 

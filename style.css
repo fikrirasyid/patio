@@ -8,7 +8,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: patio
-Tags: orange, white, light, responsive-layout, one-column, custom-colors, custom-menu, editor-style, featured-images, post-formats, sticky-post, threaded-comments, translation-ready, photoblogging
+Tags: orange, white, light, responsive-layout, one-column, custom-colors, custom-menu, editor-style, featured-images, post-formats, sticky-post, threaded-comments, translation-ready, photoblogging, rtl-language-support
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1910,7 +1910,7 @@ a:hover, a:active {
     float: left;
     position: absolute;
     top: 2.4em;
-    left: -999em;
+    display: none;
     z-index: 99999;
     margin-left: 0;
     font-size: 14px;
@@ -1925,7 +1925,7 @@ a:hover, a:active {
 }
 @media screen and (min-width: 1000px) {
   .main-navigation ul ul ul {
-    left: -999em;
+    display: none;
     top: 0;
   }
   .main-navigation ul ul li:hover > ul {
@@ -1936,6 +1936,7 @@ a:hover, a:active {
   }
   .main-navigation ul li:hover > ul {
     left: auto;
+    display: block;
   }
   .main-navigation li {
     float: left;
@@ -2499,7 +2500,7 @@ a:hover, a:active {
   vertical-align: middle;
   margin-right: 10px;
   position: absolute;
-  top: 4px;
+  top: 6px;
   left: 0;
 }
 @media screen and (min-width: 1200px) {
@@ -2689,7 +2690,6 @@ a:hover, a:active {
   .not-found .widget_recent_entries ul,
   .not-found .widget_categories ul,
   .not-found .widget_archive ul {
-    margin-right: 30px;
     padding-left: 1.4em;
   }
   .not-found .widget_recent_entries ul li,
