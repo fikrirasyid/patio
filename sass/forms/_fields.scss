@@ -6,6 +6,7 @@ input[type="search"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
+    -webkit-appearance: none;
 	border-radius: 0;
 	@include font-size( 1 );
 	border-bottom: 3px solid #979797;

@@ -1584,6 +1584,7 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
+  -webkit-appearance: none;
   border-radius: 0;
   font-size: 14px;
   font-size: 0.875rem;
