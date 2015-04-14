@@ -69,3 +69,13 @@ function patio_jetpack_infinite_scroll_has_footer_widgets(){
 
 }
 add_filter( 'infinite_scroll_has_footer_widgets', 'patio_jetpack_infinite_scroll_has_footer_widgets' );
+
+/**
+ * Auto set jetpack comments' color scheme to dark due to #comments background
+ * 
+ * @see Jetpack_Comments->set_default_color_theme_based_on_theme_settings() at /jetpack/modules/comments/comments.php
+ */
+function patio_jetpack_set_color_scheme_to_dark(){
+	return 'dark';
+}
+add_filter( 'theme_mod_color_scheme', 'patio_jetpack_set_color_scheme_to_dark' );
