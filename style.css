@@ -2978,6 +2978,28 @@ a:hover, a:active {
   margin-top: 15px;
   margin-bottom: 30px;
 }
+#respond .form-submit {
+  margin-bottom: 40px;
+}
+#respond .comment-subscription-form {
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 1200px) {
+  #respond .comment-subscription-form {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+#respond .comment-subscription-form input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#respond .comment-subscription-form label {
+  padding-bottom: 0;
+  vertical-align: middle;
+}
 
 .comment-list #respond {
   padding-bottom: 30px;

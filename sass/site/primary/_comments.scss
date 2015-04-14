@@ -158,6 +158,26 @@
 		margin-top: 15px;
 		margin-bottom: 30px;
 	}
+
+	.form-submit{
+		margin-bottom: 40px;
+	}
+	
+	// Jetpack submission checkbox
+	.comment-subscription-form{
+		margin: 0 0 5px;
+		@include font-size( 1 );
+
+		input[type="checkbox"]{
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		label{
+			padding-bottom: 0;
+			vertical-align: middle;
+		}
+	}
 }
 
 .comment-list{
