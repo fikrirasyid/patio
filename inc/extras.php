@@ -38,7 +38,7 @@ function patio_post_classes( $classes ){
 	}
 
 	// Skip sticky post
-	if( is_sticky( $post->ID ) && $paged < 2 ){
+	if( is_home() && is_sticky( $post->ID ) && $paged < 2 ){
 		return $classes;
 	}
 
