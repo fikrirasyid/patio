@@ -2429,6 +2429,7 @@ a:hover, a:active {
 .not-singular .hentry.sticky {
   width: auto;
   display: block;
+  margin-top: 12px;
 }
 .not-singular .hentry.sticky .entry-header {
   margin-left: 70px;
