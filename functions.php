@@ -185,6 +185,17 @@ function patio_post_nav_background() {
 add_action( 'wp_enqueue_scripts', 'patio_post_nav_background' );
 
 /**
+ * Removing sticky posts from front page's main query
+ * Sticky post which its natural position is on the first page causes posts_per_page miscalculation. 
+ */
+function patio_pre_get_posts( $query ){
+	if( ! is_admin() && $query->is_main_query() && is_home() ) {
+		$query->set( 'post__not_in', get_option( 'sticky_posts' ) );
+	}
+}
+add_action( 'pre_get_posts', 'patio_pre_get_posts' );
+
+/**
  * Load simple color adjuster library
  */
 if( ! class_exists( 'Patio_Simple_Color_Adjuster' ) ){

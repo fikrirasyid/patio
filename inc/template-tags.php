@@ -274,3 +274,38 @@ function patio_category_transient_flusher() {
 }
 add_action( 'edit_category', 'patio_category_transient_flusher' );
 add_action( 'save_post',     'patio_category_transient_flusher' );
+
+/**
+ * Manually display sticky posts at the front page
+ * @see patio_pre_get_posts()
+ */
+function patio_front_page_sticky_posts(){
+	if( is_home() && ! is_paged() ){
+
+		$sticky_posts = get_option( 'sticky_posts' );
+
+		if( is_array( $sticky_posts ) && ! empty( $sticky_posts ) ){
+			
+			// Query sticky posts
+			$front_page_query = new WP_Query( array(
+				'post__in' => $sticky_posts
+			) );
+
+			// Loop
+			if( $front_page_query->have_posts() ){
+
+				while ( $front_page_query->have_posts() ) {
+					$front_page_query->the_post();
+
+					// Display posts
+					get_template_part( 'content', get_post_format() );
+				}
+
+			}
+
+			wp_reset_postdata();
+
+		}
+
+	}	
+}

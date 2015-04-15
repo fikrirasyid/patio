@@ -18,7 +18,8 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
+			<?php patio_front_page_sticky_posts(); ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
