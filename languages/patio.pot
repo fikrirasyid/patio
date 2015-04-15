@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Patio 1.0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-04-15 16:11:26+00:00\n"
+"POT-Creation-Date: 2015-04-15 16:13:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,230 +13,224 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.1\n"
 
-#: 404.php:15 build/404.php:15
+#: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19 build/404.php:19
+#: 404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the "
 "links below or a search?"
 msgstr ""
 
-#: 404.php:27 build/404.php:27
+#: 404.php:27
 msgid "Most Used Categories"
 msgstr ""
 
-#: 404.php:44 build/404.php:44
+#: 404.php:44
 #. translators: %1$s: smiley
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: build/comments.php:37 build/comments.php:59 comments.php:37 comments.php:59
+#: comments.php:37 comments.php:59
 msgid "Comment navigation"
 msgstr ""
 
-#: build/comments.php:40 build/comments.php:62 comments.php:40 comments.php:62
+#: comments.php:40 comments.php:62
 msgid "Older Comments"
 msgstr ""
 
-#: build/comments.php:41 build/comments.php:63 comments.php:41 comments.php:63
+#: comments.php:41 comments.php:63
 msgid "Newer Comments"
 msgstr ""
 
-#: build/comments.php:75 comments.php:75
+#: comments.php:75
 msgid "Comments are closed."
 msgstr ""
 
-#: build/content-none.php:13 content-none.php:13
+#: content-none.php:13
 msgid "Nothing Found"
 msgstr ""
 
-#: build/content-none.php:19 content-none.php:19
+#: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: build/content-none.php:23 content-none.php:23
+#: content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: build/content-none.php:28 content-none.php:28
+#: content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: build/content-page.php:23 build/content-single.php:25 content-page.php:23
-#: content-single.php:25
+#: content-page.php:23 content-single.php:25
 msgid "Pages:"
 msgstr ""
 
-#: build/content-page.php:30 build/inc/template-tags.php:136
 #: content-page.php:30 inc/template-tags.php:136
 msgid "Edit"
 msgstr ""
 
-#: build/content-search.php:9 build/content.php:9 build/functions.php:138
 #: content-search.php:9 content.php:9 functions.php:138
 msgid "Permanent link to %s"
 msgstr ""
 
-#: build/footer.php:18 footer.php:18
+#: footer.php:18
 msgid "Close Search"
 msgstr ""
 
-#: build/footer.php:52 footer.php:52
+#: footer.php:52
 msgid "http://wordpress.org/"
 msgstr ""
 
-#: build/footer.php:52 footer.php:52
+#: footer.php:52
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: build/footer.php:54 footer.php:54
+#: footer.php:54
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: build/functions.php:53 build/header.php:38 functions.php:53 header.php:38
+#: functions.php:53 header.php:38
 msgid "Primary Menu"
 msgstr ""
 
-#: build/functions.php:88 functions.php:88
+#: functions.php:88
 msgid "Footer %d"
 msgstr ""
 
-#: build/functions.php:139 functions.php:139
+#: functions.php:139
 msgid "Continue Reading"
 msgstr ""
 
-#: build/header.php:22 header.php:22
+#: header.php:22
 msgid "Skip to content"
 msgstr ""
 
-#: build/header.php:35 header.php:35
+#: header.php:35
 msgid "Search"
 msgstr ""
 
-#: build/inc/customizer.php:28 inc/customizer.php:28
+#: inc/customizer.php:28
 msgid "Link color"
 msgstr ""
 
-#: build/inc/customizer.php:29 inc/customizer.php:29
+#: inc/customizer.php:29
 msgid "Select color for your link"
 msgstr ""
 
-#: build/inc/customizer.php:44 inc/customizer.php:44
+#: inc/customizer.php:44
 msgid "Error generating color scheme. Please try again."
 msgstr ""
 
-#: build/inc/customizer.php:51 inc/customizer.php:51
+#: inc/customizer.php:51
 msgid "Color scheme cannot be generated. Please activate Patio theme first."
 msgstr ""
 
-#: build/inc/extras.php:89 inc/extras.php:89
+#: inc/extras.php:89
 msgid "Page %s"
 msgstr ""
 
-#: build/inc/template-tags.php:23 inc/template-tags.php:23
+#: inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr ""
 
-#: build/inc/template-tags.php:27 inc/template-tags.php:27
+#: inc/template-tags.php:27
 msgid "Older posts"
 msgstr ""
 
-#: build/inc/template-tags.php:31 inc/template-tags.php:31
+#: inc/template-tags.php:31
 msgid "Newer posts"
 msgstr ""
 
-#: build/inc/template-tags.php:56 inc/template-tags.php:56
+#: inc/template-tags.php:56
 msgid "Post navigation"
 msgstr ""
 
-#: build/inc/template-tags.php:96 inc/template-tags.php:96
+#: inc/template-tags.php:96
 msgid "Add your comment"
 msgstr ""
 
-#: build/inc/template-tags.php:96 build/inc/template-tags.php:132
 #: inc/template-tags.php:96 inc/template-tags.php:132
 msgid "1 Comment"
 msgstr ""
 
-#: build/inc/template-tags.php:96 build/inc/template-tags.php:132
 #: inc/template-tags.php:96 inc/template-tags.php:132
 msgid "% Comments"
 msgstr ""
 
-#: build/inc/template-tags.php:110 inc/template-tags.php:110
+#: inc/template-tags.php:110
 msgid "Posts written by %s"
 msgstr ""
 
-#: build/inc/template-tags.php:119 build/inc/template-tags.php:125
 #: inc/template-tags.php:119 inc/template-tags.php:125
 #. translators: used between list items, there is a space after the comma
 msgid ", "
 msgstr ""
 
-#: build/inc/template-tags.php:132 inc/template-tags.php:132
+#: inc/template-tags.php:132
 msgid "Leave a comment"
 msgstr ""
 
-#: build/inc/template-tags.php:153 inc/template-tags.php:153
+#: inc/template-tags.php:153
 msgid "Category: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:155 inc/template-tags.php:155
+#: inc/template-tags.php:155
 msgid "Tag: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:157 inc/template-tags.php:157
+#: inc/template-tags.php:157
 msgid "Author: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:159 inc/template-tags.php:159
+#: inc/template-tags.php:159
 msgid "Year: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:161 inc/template-tags.php:161
+#: inc/template-tags.php:161
 msgid "Month: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:163 inc/template-tags.php:163
+#: inc/template-tags.php:163
 msgid "Day: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:185 inc/template-tags.php:185
+#: inc/template-tags.php:185
 msgid "Archives: %s"
 msgstr ""
 
-#: build/inc/template-tags.php:189 inc/template-tags.php:189
+#: inc/template-tags.php:189
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: build/inc/template-tags.php:191 inc/template-tags.php:191
+#: inc/template-tags.php:191
 msgid "Archives"
 msgstr ""
 
-#: build/search.php:16 search.php:16
+#: search.php:16
 msgid "Search Results for: %s"
 msgstr ""
 
-#: build/single.php:19 single.php:19
+#: single.php:19
 msgid "See Next"
 msgstr ""
 
-#: build/single.php:20 single.php:20
+#: single.php:20
 msgid "Next post:"
 msgstr ""
 
-#: build/single.php:22 single.php:22
+#: single.php:22
 msgid "Previously"
 msgstr ""
 
-#: build/single.php:23 single.php:23
+#: single.php:23
 msgid "Previous post:"
 msgstr ""
 
@@ -262,85 +256,84 @@ msgstr ""
 msgid "http://fikrirasy.id"
 msgstr ""
 
-#: build/comments.php:30 comments.php:30
+#: comments.php:30
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: build/inc/template-tags.php:159 inc/template-tags.php:159
+#: inc/template-tags.php:159
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: build/inc/template-tags.php:161 inc/template-tags.php:161
+#: inc/template-tags.php:161
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: build/inc/template-tags.php:163 inc/template-tags.php:163
+#: inc/template-tags.php:163
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: build/inc/template-tags.php:166 inc/template-tags.php:166
+#: inc/template-tags.php:166
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr ""
 
-#: build/inc/template-tags.php:168 inc/template-tags.php:168
+#: inc/template-tags.php:168
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr ""
 
-#: build/inc/template-tags.php:170 inc/template-tags.php:170
+#: inc/template-tags.php:170
 msgctxt "post format archive title"
 msgid "Images"
 msgstr ""
 
-#: build/inc/template-tags.php:172 inc/template-tags.php:172
+#: inc/template-tags.php:172
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr ""
 
-#: build/inc/template-tags.php:174 inc/template-tags.php:174
+#: inc/template-tags.php:174
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr ""
 
-#: build/inc/template-tags.php:176 inc/template-tags.php:176
+#: inc/template-tags.php:176
 msgctxt "post format archive title"
 msgid "Links"
 msgstr ""
 
-#: build/inc/template-tags.php:178 inc/template-tags.php:178
+#: inc/template-tags.php:178
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr ""
 
-#: build/inc/template-tags.php:180 inc/template-tags.php:180
+#: inc/template-tags.php:180
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr ""
 
-#: build/inc/template-tags.php:182 inc/template-tags.php:182
+#: inc/template-tags.php:182
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr ""
 
-#: build/searchform.php:3 build/searchform.php:4 searchform.php:3
-#: searchform.php:4
+#: searchform.php:3 searchform.php:4
 msgctxt "label"
 msgid "Search for:"
 msgstr ""
 
-#: build/searchform.php:4 searchform.php:4
+#: searchform.php:4
 msgctxt "placeholder"
 msgid "Type keyword and hit enter to search..."
 msgstr ""
 
-#: build/searchform.php:6 searchform.php:6
+#: searchform.php:6
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
