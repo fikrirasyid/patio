@@ -65,7 +65,7 @@ function patio_customize_preview_js( $wp_customize ) {
 		 */
 		wp_enqueue_style( 'patio-style', get_stylesheet_uri() );
 
-		$inline_style = wp_add_inline_style( 'patio-style', $color_scheme );
+		$inline_style = wp_add_inline_style( 'patio-style', wp_strip_all_tags( $color_scheme ) );
 	}
 }
 add_action( 'customize_preview_init', 'patio_customize_preview_js' );

@@ -100,7 +100,7 @@ add_action( 'widgets_init', 'patio_widgets_init' );
  */
 function patio_scripts() {
 
-    wp_enqueue_style( 'patio-google-fonts', '//fonts.googleapis.com/css?family=Chivo:400,400italic,900,900italic' );			
+    wp_enqueue_style( 'patio-google-fonts', '//fonts.googleapis.com/css?family=Chivo:400,400italic,900,900italic' );
 	wp_enqueue_style( 'patio-style', get_stylesheet_uri() );
 
 	wp_register_script( 'jquery-waitforimages', get_template_directory_uri() . '/js/jquery.waitforimages.js', '1.0', array( 'jquery' ) );
@@ -122,7 +122,7 @@ function patio_color_scheme(){
 	$color_scheme = get_theme_mod( $name, false );
 
 	if( $color_scheme ){
-		wp_add_inline_style( 'patio-style', $color_scheme );
+		wp_add_inline_style( 'patio-style', wp_strip_all_tags( $color_scheme ) );
 	}
 }
 endif; // patio_color_scheme
@@ -133,13 +133,13 @@ add_action( 'wp_enqueue_scripts', 'patio_color_scheme' );
  */
 function patio_excerpt_more(){
 	global $post;
-	
+
 	$more_url 		= esc_url( get_permalink( $post->ID ) );
 	$more_title 	= sprintf( __( 'Permanent link to %s', 'patio' ), $post->post_title );
 	$more_copy 		= __( 'Continue Reading', 'patio' );
 
 	return "&hellip; </p><p><a href='{$more_url}' title='{$more_title}' class='more-link'>{$more_copy} &rarr;</a>";
-}	
+}
 add_filter( 'excerpt_more', 'patio_excerpt_more' );
 
 /**
@@ -180,13 +180,13 @@ function patio_post_nav_background() {
 		';
 	}
 
-	wp_add_inline_style( 'patio-style', $css );
+	wp_add_inline_style( 'patio-style', wp_strip_all_tags( $css ) );
 }
 add_action( 'wp_enqueue_scripts', 'patio_post_nav_background' );
 
 /**
  * Removing sticky posts from front page's main query
- * Sticky post which its natural position is on the first page causes posts_per_page miscalculation. 
+ * Sticky post which its natural position is on the first page causes posts_per_page miscalculation.
  */
 function patio_pre_get_posts( $query ){
 	if( ! is_admin() && $query->is_main_query() && is_home() ) {
