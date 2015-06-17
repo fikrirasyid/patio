@@ -73,8 +73,13 @@ Patio serves your article nicely on mobile page
 
 ## Changelog
 
-#### April 5th, 2015
+#### April 5th, 2015 v1.0.1
 Submitted to WordPress repository
+
+#### June 17th, 2015 v1.0.2
+- Incorporating suggestion given by WordPress Theme Review Theme regarding license and escaping & sanitizing
+- Changing screenshot.png to prevent unwanted license issue (using my own image)
+- Use `wp_strip_all_tags()` to escape and sanitize saved and outputed custom color scheme's css
 
 ## Download
 #### [Download at GitHub](https://github.com/fikrirasyid/patio) | [Demo](http://patio.fikrirasy.id/)
